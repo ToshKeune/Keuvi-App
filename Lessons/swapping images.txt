@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <title>JavaScript - Changing images back and forth</title>
+ <script type="text/javascript">
+ 
+ /* This program will swap an image when it is clicked by using the getElementById() method
+ The program will use an image_tracker variable to keep track of which image is currently displayed
+ We can use an IF statement to check if the orange picture is being displayed,
+ then swap with the blue one, and vice versa.
+ */ 
+ 
+ var image_tracker = 'orange';
+ 
+ function change(){
+ var image = document.getElementById('circle');
+ if(image_tracker=='orange'){
+ image.src='blue.png';
+ image_tracker='blue';
+ }
+ else{
+ image.src='orange.png';
+ image_tracker='orange';
+ }
+ }
+ 
+ </script>
+ 
+</head>
+<body>
+ 
+<img src="orange.png" alt="Circle" id="circle" onclick="change();">
+ 
+ 
+</body>
+</html>

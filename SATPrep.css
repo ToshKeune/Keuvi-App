@@ -1,0 +1,193 @@
+	.buttonNext {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.buttonBack {
+    background-color: #008CBA; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.buttonAnswer {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.underline{
+	text-decoration: underline;	
+	}
+
+	.pFill {
+    background-color: #778899 ; 
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+	}
+
+	.pFillChecked {
+    background-color: #52a9ff; 
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+	}
+	
+	.bAqua{
+		font-size: 20px;
+		color:#00ffff;
+	}
+
+	.contentContainer{
+		font-size: 20px;
+		color: #4B9CD3	;
+	}
+
+	.promptContainer{
+		font-size: 20px;
+		color: #4B9CD3	;
+	}
+
+	.lessonContainer{
+		font-size: 36px;
+		color: #4B9CD3	;
+		font-weight: bold;
+	}
+
+	.pageIndicator{
+		font-size: 24px;
+		background-color: #4B9CD3;
+		color: black;
+	}
+
+  /* Tooltip 
+	.popper + .tooltip > .tooltip-inner {
+      background-color: #FFFFFF; 
+      color: black; 
+      border: 1px solid black; 
+      padding: 5px;
+      font-size: 16px;
+  }*/
+ 	.popper  {
+      background-color: #FFFFFF; 
+      border: 1px solid black; 
+      padding: 5px;
+      font-size: 16px;
+	  color:#80f442;
+  }
+  	a.popped  {
+      background-color: #FF0000; 
+      padding: 5px;
+      font-size: 16px;
+	  color:#66ff33;
+  }
+ 
+	.lne  {
+		max-width:24px;
+		text-align:right;
+		font-style: italic;
+		font-family: arial;
+		font-size: 10pt;
+		color:#8e8d88
+	}
+	
+	.poplne  {
+		font-family: arial;
+		font-size: 12pt;
+		color:#80f442;
+	}
+	
+	.reading {
+		width: 35rem;
+        font-size: 12pt;
+        font-family: arial;
+     /*    table-layout: fixed;  */
+	}
+    
+	.rdngHdng  {
+		font-size: 14pt;
+		font-family: arial;
+		color: #9900ff;
+	}
+	
+	.bluetext  {
+		font-size: 13pt;
+		font-family: arial;
+		color: #0000ff;
+	}
+	
+	.vertical-menu {
+		width: 400pt; /* Set a width if you like */
+	}
+
+	.reading-col {
+		width: 400pt; /* Set a width if you like */
+		resize:both;
+		overflow:auto;
+	}
+	
+	.vertical-menu a {
+		background-color: white; /* White background color */
+		color: black; /* Black text color */
+		display: block; /* Make the links appear below each other */
+		padding: 12px; /* Add some padding */
+		text-decoration: none; /* Remove underline from links */
+		text-align: left;
+		border-width: 05px;
+		
+		
+	}
+
+	.vertical-menu a:hover {
+		background-color: #ccc; /* Dark grey background on mouse-over */
+	}
+
+	.vertical-menu a.active {
+		background-color: #9933ff; /* Tarheel Blue ??? */
+		color: white;
+	}
+	
+	.vertical-menu a.active {
+		background-color: #9933ff; /* Tarheel Blue ??? */
+		color: white;
+	}
+	
+	  /* Tooltip on top 
+	  .test + .tooltip.top > .tooltip-arrow {
+		  border-top: 5px solid green;  */
+	  }
+	  /* Tooltip on bottom 
+	  .test + .tooltip.bottom > .tooltip-arrow {
+		  border-bottom: 5px solid blue;  */
+	  }
+	  /* Tooltip on left 
+	  .test + .tooltip.left > .tooltip-arrow {
+		  border-left: 5px solid red;  */
+	  }
+	  /* Tooltip on right 
+	  .test + .tooltip.right > .tooltip-arrow {
+		  border-right: 5px solid black;  */
+	  }

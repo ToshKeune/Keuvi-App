@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+  <html lang="en">
+    
+  <head>
+    <title>Reading Template Title</title> 
+    <meta charset="utf-8"> 
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">  
+  
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sandbox/SATPrep.css">    
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  </head>
+    
+ <body>
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-6">  
+				<p style="height:1rem"></p> 			
+				<div id=page_n>
+				<p class="rdngHdng">Commas</p>
+					<p>Commas probably show up on the test more frequently than any other grammar topic. Luckily, all of the commas used on the test boil down to three basic uses. We'll see commas used to separate items in lists, to mark off dependent clauses, and to connect independent clauses.</p>
+				<p class="rdngHdng">Lists</p>
+					<p>We use commas between each of the items in a list:</p>
+					<p>I had to buy apples, bananas, and cucumbers.</p> 
+					<p>The test defaults to the Oxford comma, the one right before the and. It’s a good idea to do the same on the essay section, just to be safe.</p>
+
+				</div>
+				<div id=page_n>
+					<p class="rdngHdng">Multiple Choice/p>
+					<p style="height:1rem"></p> 
+					<p>Select the correct punctuation for the following sentence</p>
+					<p id="Q1"><u>I did my laundry made my bed and performed my nightly breathing exercises.</u></p>		
+					<ol id="exampleFormControlSelect1" type="A">
+							<li><a href="#Q1" id="Q1A" value="Q1A" onclick="showResp(event)">NO CHANGE</a></li>
+							<li><a href="#Q1" id="Q1B" value="Q1B" onclick="showResp(event)">I did, my laundry, made, my bed, and performed, my nightly breathing exercises.</a></li>
+							<li><a href="#Q1" id="Q1C" value="Q1C" onclick="showResp(event)">I did my laundry, made my bed, and performed my nightly breathing exercises.</a></li>
+							<li><a href="#Q1" id="Q1D" value="Q1D" onclick="showResp(event)">I did, my laundry, made my bed, and performed my nightly breathing exercises.</a></li>
+					</ol>		
+			
+					<p style="height:1rem"></p> 
+					<p><button value="1" onclick="explaind(event)">Explain Answer</button></p>
+					<a href="#!" id="Q1DIV"></a>
+
+				</div>
+				<div id=page_n>
+					<p class="rdngHdng">Dependent Clauses</p>
+						<p>We use commas to separate dependent clauses from the independent clauses they modify.</p>
+						<p>An independent clause has a subject, a verb, and a fully fleshed out thought. It's independent because it can stand alone as its own sentence.</p>
+						<p>A dependent clause, on the other hand, is a word or phrase which doesn’t amount to a full sentence. It can't stand on its own; therefore, it is dependent on another clause.</p>
+						<p>Basically, we can add a dependent clause to an independent one if we put commas around the dependent clause. The dependent clause can go at the beginning, middle, or end of the s	entence.</p> 
+				</div>
+				<div id=page_n>
+					<p class="rdngHdng">Introductions
+						<p>Dependent clauses at the beginning of sentences serve as introductions. They typically provide us with some kind of setting for the rest of the sentence.</p> 
+						<p>These introductory clauses can stretch from one word all the way to long, mellifluous phrases.</p> 
+						<p>First, I drove to the store.</p>	
+						<p>As rain lashed against my windows and wind tore the trees out of the ground, I drove to the store.</p>
+
+				</div>
+				<div id=page_n>
+					<p>First, I drove to the store.</p> 
+					<p>In this sentence, First is our dependent clause. It gives us the context for the rest of the sentence.</p> 
+					<p>I drove to the store is our independent clause. It could stand alone as a full sentence.</p> 
+					<p>We separate the dependent clause from the independent one with a comma. We should be able to take everything before the comma (First) out and still enough for a sentence (I drove to the store).</p>
+				<!-- Insert button --> 
+				</div>
+				<div id=page_n>
+					<p>As rain lashed against my windows and wind tore the trees out of the ground, I drove to the store.</p>
+					<p>As rain lashed against my windows and wind tore the trees out of the ground is our dependent clause here.</p> 
+					<p>Even though it's a much longer descriptive phrase than First, this string of words still doesn't have enough to stand on its own as a sentence.</p>
+					<p>I drove to the store is our independent clause again.</p> 
+					<p>We use a comma to mark the end of the dependent clause and the beginning of the independent clause. If we were to take out the dependent clause, we’d still be left with a perfectly fine sentence.</p> 
+				</div>
+				<div id=page_n>
+					<p class="rdngHdng">Interruptions</p>
+					<p>We can move the dependent clause to the middle of the sentence, interrupting the independent clause with important details. We put commas at the beginning and at the end of the dependent clause to set it apart from the independent one.</p> 
+					<p>Michael Jordan, therefore, is widely regarded as the greatest basketball player of all time.</p>
+					<p>Michael Jordan, who played his college basketball at the University of North Carolina, is widely regarded as the greatest basketball player of all time.</p>
+				</div>
+				<div id=page_n>
+					<p>Michael Jordan, therefore, is widely regarded as the greatest basketball player of all time.</p>
+					<p>In this sentence, therefore serves as our interrupting dependent clause. It ties our present sentence back to the previous one (which presumably detailed Jordan's many accomplishments).</p>
+					<p>Michael Jordan is widely regarded as the greatest basketball player of all time is the (interrupted) independent clause.</p> 
+					<p>We put commas before and after therefore. We should be able to momentarily lift the material in between the commas out and still have enough material for a full sentence (Michael Jordan is widely regarded as the greatest basketball player of all time).</p>
+				</div>
+				<div id=page_n>
+					<p>Michael Jordan, who played his college basketball at the University of North Carolina, is widely regarded as the greatest basketball player of all time.</p>
+					<p>Here, the dependent clause is who played his college basketball at the University of North Carolina. It provides an important descriptive detail.</p> 
+					<p>Michael Jordan is widely regarded as the greatest basketball player of all time is our independent clause again.</p>
+					<p>We put commas around who played his college basketball at the University of North Carolina to mark it off from the rest of the sentence. If we took the words between the commas out, we'd still have a full independent clause.</p>
+				</div>
+				<div id=page_n>
+					<p class="rdngHdng">Conclusions</p>
+					<p>We can also add dependent clauses at the end of sentences, concluding the sentence with a new piece of information.</p> 
+					<p>Virginia Woolf wrote several beloved works of fiction and nonfiction, even though women faced countless obstacles to writing and publishing books during her lifetime.</p>
+				</div>
+				<div id=page_n> 
+					<p>Virginia Woolf wrote several beloved works of fiction and nonfiction, even though women faced countless obstacles to writing and publishing books during her lifetime.</p> 
+					<p>Here, our dependent clause is even though women faced countless obstacles to writing and publishing books during her lifetime. This detail complicates the information that came before it.</p>
+					<p>Our independent clause is Virginia Woolf wrote several beloved works of fiction and nonfiction, which could stand as its own sentence.</p>
+					<p>We put a comma before the dependent clause. If we lift the string of words after the comma out, we still have a functional sentence.</p>
+				</div>
+				<div id=page_n>
+					<p>Where should we put the comma(s) in these sentences?</p>
+					<p>Although I didn't know how to get there, I was too proud to ask for directions.</p> 
+					<p>I kept driving straight, even though I suspected that I was just going further and further away from my destination.</p>
+					<p>My car, which has a leaky gas tank, ran out of fuel.</p> 
+					<p>Next, my engine, which has been defective for years, exploded.</p>
+				</div>
+				<div id=page_n>
+					<p class="rdngHdng">Independent Clauses</p>
+					<p>Finally, we can use a comma and a coordinating conjunction to connect two fully independent clauses.</p> 
+					<p>The coordinating conjunctions are listed in the acronym <strong>FANBOYS:</strong></p>
+						<ul>
+							<li><span id="bAqua"><strong>F</strong></span>or</li>
+							<li><span id="bAqua"><strong>A</strong></span>nd</li>
+							<li><span id="bAqua"><strong>N</strong></span>or</li>
+							<li><span id="bAqua"><strong>B</strong></span>ut</li>
+							<li><span id="bAqua"><strong>O</strong></span>r</li>
+							<li><span id="bAqua"><strong>Y</strong></span>et</li>
+							<li><span id="bAqua"><strong>S</strong></span>o</li>
+						</ul>	
+					<p>We can use a comma plus an appropriate FANBOYS to connect two ideas.</p> 
+					<p>I tore myself away from the dinner table, for I had already consumed more calories than an Olympic swimmer.</p> 
+					<p>We shared a pizza, and I ate a meatball sandwich, a bag of chips, and an entire order of buffalo wings on my own.</p> 
+				</div>
+				<div id=page_n>
+					<p>I tore myself away from the dinner table, for I had already consumed more calories than an Olympic swimmer.</p>
+					<p>I tore myself away from the dinner table is our first independent clause: it could stand alone as its own sentence.</p> 
+					<p>We use a comma to mark the send of this first clause. Then, we add for to connect the two ideas. For indicates cause-and-effect. We always want to make sure that the FANBOYS we’re using to connect the clauses itself makes sense. We want to make sure it’s indicating the right connection.</p>
+					<p>I had already consumed more calories than an Olympic swimmer is our second independent clause. We always want to make sure that we have full independent clauses on both sides of the FANBOYS.</p>
+				</div>
+				<div id=page_n>
+					<p>We shared a pizza, and I ate a meatball sandwich, a bag of chips, and an entire order of buffalo wings on my own.</p>
+					<p>We shared a pizza can stand as its own independent clause.</p> 
+					<p>We mark the end of that phrase with a comma, then add and to connect the two ideas. And makes a lot of sense here: we’re just adding the two ideas (what they shared plus what the speaker ate alone) together.</p>
+					<p>I ate a meatball sandwich, a bag of chips, and an entire order of buffalo wings on my own is also a perfectly fine independent clause, though it’s a terrible dietary plan.</p> 
+				</div>
+				<div id=page_n>
+					<p>There are a few common mistakes to watch out for.</p>
+					<p>I knew all of the answers on the test, I was sure to get an A.</p>
+					<p>This sentence is incorrect because it just smushes two independent clauses together with no FANBOYS. We can never connect two independent clauses together with just a comma.</p>
+					<p>We could fix this sentence by adding a FANBOYS.</p>
+					<p>I knew all of the answers on the test, therefore, I was sure to get an A.</p>
+					<p>This is a comma splice.</p> 
+					<p>Here we have our two clauses connected by a transitional expression. Therefore serves as an interrupting dependent clause— that's why we put commas around it. That means we should be able to take therefore out of the sentence and still have one intact independent clause around it.</p>
+					<p>However, if we take therefore out ofthis sentence, it becomes I knew all of the answers on the test I was sure to get an A. That sentence has way too much going on.</p> 
+				</div>
+				<div id=page_n>
+					<p class="rdngHdng">Does this work?</p>
+					<p>I wanted to go to the beach, but couldn’t because of the rain.</p> 
+					<p>I knew I had aced the test, so I took the rest of the day off and watched random youtube videos.</p>
+					<p>I wanted to play some basketball, so my ball was flat.</p> 
+				</div>
+				<div id=page_n>
+					<p class="rdngHdng">Review</p>
+					<p>Comma questions on the test will task us with correctly placing commas in lists, around dependent clauses, and in between independent clauses.</p>
+					<p class="rdngHdng">Lists</p>
+					<p>We use commas to separate items in a list.</p>
+					<p>In order to make dinner tonight, I need pasta, diced tomatoes, cream, and bread.</p>
+					<p class="rdngHdng">Dependent clauses</p>
+					<p>We can also use commas to set a dependent clause apart from the beginning, middle, or end of an independent clause.</p>
+					<p>First, I left to go to the grocery store.</p>
+					<p>I realized, however, that I’d locked my keys inside my house.</p>
+					<p>I had to break in through the window, even though it’s my own house.</p>
+					<p class="rdngHdng">Independent Clauses</p>
+					<p>Finally, we can use a comma and an appropriate FANBOYS to connect two independent clauses that are related to each other.</p>
+					<p>A policeman saw me trying to smash my window, and he immediately arrested me.</p>
+				</div>
+		<div class="row">	
+			<div class="col-sm-6"> 			
+				<p class="rdngHdng"> Questions </p>
+				<p style="height:1rem"></p> 
+				<p id="Q1">1. Question 1 text goes here? </p>		
+				<ol id="exampleFormControlSelect1" type="A" <!-- onclick="showResp(event)" -->
+						<li><a href="#" id="Q1A" value="Q1A" ondblclick="showResp(event)">Question 1 Answer A goes here.</a></li>
+						<li><a href="#" id="Q1B" value="Q1B" ondblclick="showResp(event)">Question 1 Answer B goes here. Question 1 Answer B line 2 goes here with wrapping line 3 goes here.</a></li>
+						<li><a href="#" id="Q1C" value="Q1C" ondblclick="showResp(event)">Question 1 Answer C goes here continuing line 2 here.</a></li>
+						<li><a href="#" id="Q1D" value="Q1D" ondblclick="showResp(event)">Question 1 Answer D goes here. And Answer D line 2 here.</a></li>
+				</ol>		
+		
+				<p style="height:1rem"></p> 
+				<p><button value="1" onclick="explaind(event)">Explain Answer</button></p>
+				<a href="#" id="Q1DIV"></a>
+				
+				<p id="Q2">2. Question 2 (Paired part 1) Text goes here:  </p>		
+				<ol id="Q2Answers" type="A" <!-- onclick="showResp(event)" -->
+						<li><a href="#" id="Q2A" value="Q2A" style="color:black" onclick="this.style.fontWeight='bold'" ondblclick="showResp(event)">Question 2 Answer A goes here.</a></li>
+						<li><a href="#" id="Q2B" value="Q2B" style="color:black" onclick="this.style.fontWeight='bold'" ondblclick="showResp(event)">Question 2 Answer B goes here.</a></li>
+						<li><a href="#" id="Q2C" value="Q2C" style="color:black" onclick="this.style.fontWeight='bold'" ondblclick="showResp(event)">Question 2 Answer C goes here.</a></li>
+						<li><a href="#" id="Q2D" value="Q2D" style="color:black" onclick="this.style.fontWeight='bold'" ondblclick="showResp(event)">Question 2 Answer D goes here.</a></li>
+				</ol>			
+				
+				<p style="height:1rem"></p> 
+				<p><button value="2" onclick="explaind(event)">Explain Answer</button></p>
+				<a href="#"  id="Q2DIV"></a>
+			
+	
+			
+			</div>	
+			<div class="col-sm-6"> 
+
+			</div>
+		</div> 	
+	
+	<div class="row">
+		<div class="col-sm-4"> 		
+		
+			<p class="rdngHdng"> Questions </p>
+			<p style="height:1rem"></p> 
+		
+
+		</div>
+		<div class="col-sm-4">
+			<p class="rdngHdng"> Middle Pane Questions </p>
+		
+		
+		</div>
+		<div class="col-sm-4">
+			<p class="rdngHdng" style="color:purple"> Right Pane Questions </p>
+		
+		
+		</div>
+	</div>
+</div>		
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	   
+
+
+ 	<script type="text/javascript">
+		<!-- Basic Script Variable --> 
+		// define variables to deal with linked questions
+		var firstAnswer=null;
+		var secondAnswer=null;
+		
+		var background = "#ffffff";  // Sets the background to white
+		
+		// define variables to control the display of explanations
+		//                0  1   2   3   4   5   6   7   8   9  10  11
+		var startPara = [ 0, 0,  9, 14, 22, 25, 29, 32, 36, 44, 48, 53];
+		var lastPara =  [ 0, 8, 13, 17, 24, 28, 31, 35, 39, 47, 52, 56];
+		// Remember these indices are Zero based so to have written[11] need 12 entries
+		var written = [ false, false, false, false, false, false, false, false, false, false, false, false];
+		var mixed = ["Q23", "Q78"];	
+		
+		// Index for removing the unselected wrong answers
+		var questionOptions = ["A", "B", "C", "D"];	
+		
+		// Explanation Text elements to display
+		var paragraphs = new Array(	  
+			/* 0 */  "In the first paragraph, the author writes, 'humans,it turns out, don’t know very much with absolute, undeniable objectivity.",   /* 0 */
+			/* 1 */	 "In other words, human knowledge is fallible (that is, liable to fail).",  /* 1 */
+			/* 2 */	 "Later, the author writes, 'First-person introspection, the act of a person scanning his or her own brain to see what going on in there, might not be as unquestionable as once thought.",  /* 2 */
+			/* 3 */	 "This indicates that our uncertainty ought to cover fields which we recently were quite certain of.",           /* 3 */
+			/* 4 */	 "<b>Answer A is a tad extreme.</b>",  /* 4 */
+			/* 5 */	 "Answer C is partially correct: the passage argues that our second order thinking is imperfect.",  
+			/* 6 */	 "However, the second part isn't supported in the passage. The author writes, 'No one can really say whether or not their first order thinking.",
+			/* 7 */	 "<b>This is not a resounding testimony in favor of first order thinking.</b>",
+			/* 8 */	 "<i>Answer D takes things a bit too far. Epistemology isn't itself a threat to the storehouse of human knowledge, like a fire engulfing a library; epistemology is, rather, an examination of whether or not that storehouse exists in the first place.</i>",	
+  			/* Question 2 */
+			/* 9 */  "Well, let's look at question 3.",
+			/* 10 */ "The best support for Answer D is found in A) Lines 6-11: <q>Things in the natural world are inevitably filtered through our (limited) senses. We have mountains of evidence that the brain is not a neutral observer of the world around it; perception is not some transparent glass through which we see, hear, taste, touch, and smell things as they really are.</q>",
+			/* 11 */ "Answer A directly contradicts the passage.",				
+			/* 12 */ "Answer B is a bit much-- it reads a intentional mischievousness into the brain's functioning that does not appear anywhere in the passage. Remember, whatever you've been taught, beleive, or see as common truth this question relates to what is in the reading.",
+			/* 13 */ "Answer C is extreme. Just because the brain is <q><b>not neutral</b>,</q> that doesn't mean it's essentially useless.",
+			/* Question 3 */ 
+			/* 14 */ "Reading snippet A lines 6 to 11 poses a question instead of supporting any assertion",
+			/* 15 */ "Reading snippet B lines 19 to 21 describes  hypothetical response that does not support any claim.", 
+			/* 16 */ "Reading snippet C lines 28 to 29 just tells us about the setup of the experiment.",				
+			/* 17 */ "Reading snippet D lines 62 to 64 aupports the point of this question.",				
+			/* Question 2 & 3 */
+			/* 18 */ "A is the answer that goes along with Answer D in question 2. These lines state the author's general opinion on the workings of the brain.",
+			/* 19 */ "Answer B is not the writer&#8217s own thinking. It is a hypothetical response to the first paragraph.", 			
+			/* 20 */ "Answer C just tells us about the setup of the experiment; it doesn&#8217t really give us any idea of what the experiment indicated.", 	
+			/* 21 */ "Answer D is unrelated to question 2. It does touch on something the author does positively attribute to the brain, but that's not the primary focus or main thrust of the passage's discussion of the brain.",
+			/* Question 4 */	
+			/* 22 */ 	"Paragraph 1 of the <b>answer!</b>",
+			/* 23 */	"<i>We perceive the present in a biased way, and our memories of the past get blurred even more.</i>",
+			/* 24 */	"This sentence preserves the meaning of the original sentence, that our <b>memories get less and less exact over time.</b>",
+			/* Question 5 */ 
+			/* 25 */	"Paragraph 1 of the <b>answer!</b>",
+			/* 26 */	"Answer 5 Paragraph 2 of the <b>answer!</b>",
+			/* 27 */	"Answer B doesn't really have any basis in the passage. The new paragraph doesn't go on to prove the accuracy of the claims in the first one. In fact, the second paragraph seems to be a kind of resigned reaction to the first.",
+			/* 28 */	"Answer D is contradictory: we transition to a field of knowledge that we shouldn't actually have complete faith in.",
+            /* Question 6 */  
+			/* 29 */	"Paragraph 1 of <b>answer to question 6!</b>",
+			/* 30 */	"Answer 6 Paragraph 2 of the <b>answer!</b>",	
+			/* 31 */	"This new sentence preserves the original sentence&#8217s sense that a considerable majority of participants picked the glove on the far right.",
+            /* Question 7 */  
+			/* 32 */	"Answer 7 Paragraph 1 of the <b>answer!</b>",
+			/* 33 */	"Answer 7 Paragraph 2 of the <b>answer!</b>", 
+			/* 34 */	"Answer 7 Paragraph 2 of the <b>answer!</b>",
+			/* 35 */	"Answer 7 Paragraph 3 of the answer!",
+            /* Question 8 */  
+			/* 36 */	"Answer 8 Paragraph 0 of the <b>answer!</b>",
+			/* 37 */	"Answer 8 Paragraph 1 of the <b>answer!</b>",
+			/* 38 */	"Answer 8 Paragraph 2 of the answer!",			
+			/* 39 */	"Answer 8 Paragraph 3 of the answer!",				
+            /* Question 7 & 8 */  
+			/* 40 */	"Answer 7 and 8 Paragraph 0 of the <b>answer!</b>",
+			/* 41 */	"Answer 7 and 8 Paragraph 1 of the <b>answer!</b>",
+			/* 42 */	"Answer 7 and 8 Paragraph 2 of the answer!",				
+			/* 43 */	"Answer 7 and 8 Paragraph 3 of the answer!",				
+            /* Question 9 */  
+			/* 44 */	"Paragraph 1 of the <b>answer!</b>",	
+			/* 45 */	"Answer 9 Paragraph 2 of the <b>answer!</b>",
+			/* 46 */	"Answer 9 Paragraph 3 of the answer!",
+			/* 47 */	"Answers B and C are first order thoughts.",					
+            /* Question 10 */  
+			/* 48 */	"Answer 10 Paragraph 1 of the <b>answer!</b>",
+			/* 49 */	"Answer 10 Paragraph 1 of the <b>answer!</b>",
+			/* 50 */	"Answer 10 Paragraph 3 of the answer!",
+			/* 51 */	"Answer C is partially there&#58 the author is certainly enthusiasm. However&#44 skepticism would be a contradictory reaction in this case.",
+			/* 52 */	"Answer D is also partially right. The author is keenly interested. However&#44 we never get any sense of anger.",
+            /* Question 11*/  
+			/* 53 */	"Answer 11 Paragraph 1 of the <q><b>answer!</b></q>",
+			/* 54 */	"Answer 11 Paragraph 2 of the <b>answer!</b>",
+			/* 55 */	"Answer 11 Paragraph 3 of the answer!",
+			/* 56 */	"Answer D is a tad extreme. The author never calls these researchers cowards. The author merely states that there are followups ripe for completion." 
+			);
+			
+		function displayExpo(e) {
+			var expo = e.target.value;
+			// alert("In displayExpo "+expo);
+			var x = document.getElementById(e.target.value);
+			// alert(x);
+			switch (expo) {		
+			case 'C23DIV':
+				if (x.innerHTML === "") {
+					x.innerHTML = "Reading snippet A lines 6 to 11 poses a question instead of supporting any assertion<br>Reading snippet B lines 19 to 21 describes  hypothetical response that does not support any claim.<br>Reading snippet C lines 28 to 29 just tells us about the setup of the experiment.<br>Reading snippet D lines 62 to 64 aupports the point of this question.";	
+				} else {
+					x.innerHTML = "";
+				}
+				break;
+			case 'C78DIV':
+				if (x.innerHTML === "") {
+					x.innerHTML = "Answer 7 and 8 Paragraph 0 of the <b>answer!</b><br>Answer 7 and 8 Paragraph 1 of the <b>answer!</b><br>Answer 7 and 8 Paragraph 2 of the answer!<br>Answer 7 and 8 Paragraph 3 of the answer!";	
+				} else {
+					x.innerHTML = "";
+				}
+				break;				
+	
+			}	
+		}
+
+		var rightResponses = ["Q1A", "Q2B", "Q3C", "Q4D", "Q5A", "Q6B", "Q7C", "Q8D", "Q9A", "Q10B", "Q11C"]; 
+
+		/*  stackoverflow example - loading a script in a script
+		function dynamicallyLoadScript(url) {
+			var script = document.createElement("script"); // Make a script DOM node
+			script.src = url; // Set its src to the provided URL
+
+			document.body.appendChild(script); // Add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+		}
+		
+		dynamicallyLoadScript("./Keuvi.js"); 
+		*/
+		// src="./Keuvi.js";
+		
+		//  These are the functions needed to make the Questions work as desired.
+		// POSSIBLE:  Add function to implement reading popups 
+		// DONE:  Implement selected Display toggling device. 
+        // DONE:  Bold selected text 
+		// TODO:  Redisplay Answers when show 
+		// TODO:  
+		
+		function answerCheck(qid, response) {
+			var el = document.getElementById(response);
+
+			// alert("Right Responses = "+rightResponses.indexOf(response));         // Debug assist
+			// alert(rightResponses[0]);                        // More debug assist  
+			// alert(rightResponses.indexOf(response) != -1);   // Third debug line
+			
+			if (rightResponses.indexOf(response) != -1 ) {    // Returns negative one if response not found in rightResponses otherwise it is
+				el.style.color = "#66ff33";                   // set to specific shade using color picker
+				el.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+				// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+				this.focus();
+
+                // Having set the Right Answer to bold Bright Green in the above 2 lines clear the remaining options.
+				// Remove third letter of response from set of questions
+				// debugging lines
+				// alert(questionOptions);
+				// alert(response.slice(2));
+
+				// remove the selected answer
+				removeOption(response);
+				// alert("After cleaning "+questionOptions);	
+
+				// Clear rest of answers
+				clearOptions(qid, response);	
+
+				// Reset the array of options
+                questionOptions = ["A", "B", "C", "D"];  // TODO:  Generalize past 4 options
+				
+				// TODO: Do we need to keep a list of questions that can still be answered
+			}
+			else 
+			{
+				el.style.color = "#ffffff"; // where background would be is a var set in the right scope
+				removeOption(response);	    // remove the selected answer
+				document.getElementById(qid).focus({preventScroll:true});				
+			}
+			el.style.backgroundColor = background;  // set where it covers the reading 
+			//alert(e.target.value);
+			// If error count == 0
+			// First Time Right++ 
+			// else Right++
+		}
+
+		// Helper function to clear used answer options
+		function removeOption(response) {
+			// Remove third letter of the user response from set of questions
+			//alert(questionOptions);
+			// alert(response.slice(response.length-1));
+			switch (response.slice(response.length-1)) {
+				case 'A':
+				  questionOptions[0]="";   
+				  break
+				case 'B':
+				  questionOptions[1]="";   
+				  break;
+				case 'C':
+				  questionOptions[2]="";   
+				  break;
+				case 'D':
+				  questionOptions[3]="";   
+				  break;
+				}
+			}	
+		
+		// Helper function to clear other Answer Options  
+		function clearOptions(qid, response) {
+			// alert("Item: "+item);
+			// alert("Index: "+index);
+			// alert("In clearing options "+questionOptions);
+			var m;
+			for (m = 0; m <= 3; m++) {
+				var toClear = questionOptions[m];
+				//alert("to Clearing "+toClear);
+				// Do not clear the empty indices
+				if (toClear != "") {
+					// Construct the ID of the answer option to remove
+					tempResponse = response.slice(0,response.length-1)+toClear;
+			
+					//alert(tempResponse);
+					// remove this answer option
+					var tel = document.getElementById(tempResponse);
+					tel.style.color = "#ffffff"; 
+					this.focus({preventScroll:true});
+
+				}
+				this.focus({preventScroll:true});
+			}
+		}
+		
+		// Restores the questions when called when the explanation is shown
+		function resetAnswers(targeted) {
+
+			// alert("Right Responses = "+rightResponses.indexOf(response));         // Debug assist
+			// alert(rightResponses[0]);                        // More debug assist  
+			// alert(rightResponses.indexOf(response) != -1);   // Third debug line
+			var m;
+			for (m = 0; m <= 3; m++) {
+				toReset = "Q"+targeted+questionOptions[m].toString();
+				alert(toReset);
+				var rel = document.getElementById(toReset);				
+				if (rightResponses.indexOf(toReset) != -1 ) {    // Returns negative one if response not found in rightResponses otherwise it is
+					rel.style.color = "#66ff33";                   // set to specific shade using color picker
+					rel.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+					// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+					this.focus();
+				}
+				else {
+					rel.style.color = "#000000";                   // otherwise set to black
+					rel.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+				
+					// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+					this.focus();
+				}
+			}	
+		}
+			
+		//  The code for handling the math is sketched out below.
+		function showMath(id, nextStep, Steps) {
+			// Set up a list of steps (may come from outside)
+			// Set up the root name
+			var nel = document.getElementById(id);
+			var nextLefttRoot = "Left_lsn_idx_"
+			var nextRightRoot = "Right_lsn_idx_"
+
+			for (x in nextStep, nextStep + Steps) 
+			{
+				nextLeft = nextLefttRoot + x.toString();
+				nextRight = nextRightRoot + x.toString();
+				// Set explanation text to corresponding text variable set in secondary JavaScript file.  Example shown
+				// var nextLeftText = "Some specified text";
+				//  Set the left HTML 
+				document.getElementById(nextLeft).innerText = nextLeftText;
+
+				// Set the math image source 
+				document.getElementById(nextRight). innerHTML = "document.image.src = 'toString(nextRight)'";
+			}
+		}	
+		
+		
+		
+		function explaind(q){
+			// In the cases below we can put most HTML tags so we could probably popup an image to explain a question
+			// Use an accordion, modal box or toggling class to display/diaappear this content. 
+			
+			// Setup variables - this combination supports up to 10 paragraph but it requires empty paragraphs
+			// Using an array of paragraphs (with the ly set up an array of indexs and use them
+			//alert("In explaind");
+			var explained = [];
+			var targeted = q.target.value;
+			var targetResult = "Q" + targeted.toString() + "DIV";	
+			//alert("TargetResult "+targetResult);
+			var i = startPara[targeted];
+			//alert("Initial i="+i);
+			//alert(written[targeted]);
+			
+			if (written[targeted]==false) {
+				// Run through the for loop to set up explanation
+				//alert("building expanation");		
+				for (i = startPara[targeted]; i <= lastPara[targeted]; i++) {
+					//alert("Index= "+i);
+					explained += paragraphs[i] + "<br>";
+					//alert("Output = "+explained);
+				}
+				written[targeted]=true;
+				// restore the Answers
+				alert (targeted);  
+				resetAnswers(targeted);
+			}	
+			else if (written[targeted]==true) {
+				// Blank out the explanation
+				//alert("clearing explanation");
+				explained = [];
+				written[targeted]=false;
+			}
+			else  {
+				alert("Impossible Logic");
+			}
+			
+			// Write the built explanation to the right HTML element 
+			document.getElementById(targetResult).innerHTML = explained;    
+		}
+		  
+		function textExpo(e) {
+			// alert("In textExpo");
+			var expo = e.target.value;
+			// alert(expo);
+			var x = document.getElementById(e.target.value);
+			// alert(x);
+			switch (expo) {		
+			case 'T1Expo':
+				x.innerHTML = "Dubitable means uncertain, yielding to doubt.";	
+				break;
+				
+			case 'T2Expo':
+				x.innerHTML = "<b>Text 2 Popup</b>";	
+				break;
+				
+			case 'T3Expo':
+				x.innerHTML = "<b>Text 3 Pop-up</b>";	
+				break;
+
+			}	
+		}
+		
+				
+		function combined(e, firstQ, secondQ) {
+			// This function handles situations where two questions have to be answered together. 
+			// It is set up to accept two values then process the combined result of both.
+			// In this use of this function the questions are #2 and #3
+				
+			// alert("In Combined");
+			// alert(e.target.value);
+			// Process each of the inputs
+			
+			// Copy the event text to a string
+			var eventText = e.target.value;
+			var outTarget = "C"+firstQ.toString()+secondQ.toString()+"Explained";	
+			
+			if ( eventText.slice(1,2) = firstQ ) 
+			{
+				firstAnswer= eventText.slice(eventText.length-1).toUpperCase();
+			}
+			else if ( eventText.slice(1,eventText.length-1) = secondQ ) 
+			{
+				secondAnswer= eventText.slice(eventText.length-1);
+			}
+			else
+			{
+			// Raise Error
+			}
+				
+			// Now with both answers generate the response
+			if (firstAnswer != null && secondAnswer != null)
+			{
+				// Set up the new combined response token
+				combo = firstAnswer + secondAnswer;
+				
+				// alert (combo);
+				answerCheck("Q"+firstQ+secondQ, "Q"+firstQ+secondQ+combo);
+				
+			}
+			
+			if (firstAnswer == null && secondAnswer != null)
+			{
+				document.getElementById(outTarget).value = "Please select an answer to question "+firstQ.toString();
+				// error counter-increment
+			}	
+			
+			if (firstAnswer != null && secondAnswer == null)
+			{
+				document.getElementById(outTarget).value = "Please select an answer to question "+secondQ.toString();
+				// error counter-increment
+			}
+		}
+			
+			
+		function showResp(e) {
+			//alert("Getting There");
+            //alert(e.target.id);
+			// alert(e.target);
+			// alert(value);
+			// Convert e to qid and response
+			eventText = e.target.id;
+			//alert(eventText);
+			var eventTarget = eventText.slice(0,2)+"DIV"
+			answerCheck(eventText.slice(0,2)+"DIV", eventText);	
+			document.getElementById(eventText).focus({preventScroll:true});
+			return false;
+		}
+
+		
+    </script>
+		
+</body>
+    
+</html>

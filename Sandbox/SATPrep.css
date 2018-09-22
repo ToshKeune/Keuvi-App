@@ -1,0 +1,259 @@
+	.buttonNext {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.buttonBack {
+    background-color: #008CBA; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.buttonAnswer {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.underline{
+	text-decoration: underline;	
+	}
+
+	.pFill {
+    background-color: #778899 ; 
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+	}
+
+	.pFillChecked {
+    background-color: #52a9ff; 
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+	}
+	
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+	font-weight:heavy;      
+}
+
+/* mouse over link */
+a:hover {
+	color:black;
+	font-weight: heavy;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.bAqua{
+	color:#00ffff;
+	font-weight: heavy;
+}
+
+.contentContainer{
+	font-size: 20px;
+	color: #4B9CD3	;
+}
+
+.promptContainer{
+	font-size: 20px;
+	color: #4B9CD3	;
+}
+
+.lessonContainer{
+	font-size: 36px;
+	color: #4B9CD3	;
+	font-weight: bold;
+}
+
+.pageIndicator{
+	font-size: 24px;
+	background-color: #4B9CD3;
+	color: black;
+}
+ 
+#overlay {
+    position: relative; 
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    left: 10px;
+    bottom: 20px;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+	}
+	
+	#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+	.lne  {
+		max-width:24px;
+		text-align:right;
+		font-style: italic;
+		font-family: arial;
+		font-size: 10pt;
+		color:#8e8d88;
+	}
+	
+	.reading {
+		width: 35rem;
+        font-size: 12pt;
+        font-family: arial;
+		color:#000000;
+	}
+    
+	.Answers {
+        font-size: 12pt;
+        font-family: arial;
+		color:#000000;
+	}
+	.rdngHdng  {
+		font-size: 14pt;
+		font-family: arial;
+		font-weight: heavy;
+		color: #9900ff;
+	}
+	
+	.bluetext  {
+		font-size: 13pt;
+		font-family: arial;
+		color: #0000ff;
+	}
+	
+	.vertical-menu {
+		width: 400pt; /* Set a width if you like */
+	}
+
+	.reading-col {
+		width: 400pt; /* Set a width if you like */
+		resize:both;
+		overflow:auto;
+	}
+
+	.questions {
+		border-style: solid;
+		border-color: red;
+	}
+	
+	.vertical-menu a {
+		background-color: white; /* White background color */
+		color: black; /* Black text color */
+		display: block; /* Make the links appear below each other */
+		padding: 12px; /* Add some padding */
+		text-decoration: none; /* Remove underline from links */
+		text-align: left;
+		
+	}
+
+	.vertical-menu a:hover {
+		background-color: #ccc; /* Dark grey background on mouse-over */
+	}
+
+	.vertical-menu a.active {
+		background-color: #9933ff; /* Tarheel Blue ??? */
+		color: white;
+	}
+	
+	.vertical-menu a.active {
+		background-color: #9933ff; /* Tarheel Blue ??? */
+		color: white;
+	}
+	
+	  /* Tooltip on top 
+	  .test + .tooltip.top > .tooltip-arrow {
+		  border-top: 5px solid green;  */
+	  }
+	  /* Tooltip on bottom 
+	  .test + .tooltip.bottom > .tooltip-arrow {
+		  border-bottom: 5px solid blue;  */
+	  }
+	  /* Tooltip on left 
+	  .test + .tooltip.left > .tooltip-arrow {
+		  border-left: 5px solid red;  */
+	  }
+	  /* Tooltip on right 
+	  .test + .tooltip.right > .tooltip-arrow {
+		  border-right: 5px solid black;  */
+	  }
+	  
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: relative; /* Was fixed to Stay in place */
+		left: 10px; 
+		bottom: 20px;  /* places it over the line above  */
+		z-index: 1; /* Sit on top */
+		padding-top: 20px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #9933ff;
+		margin: auto;
+		padding: 20px;
+		border: 2px solid #888;
+	/*	width: 80%;  */
+	}
+
+	/* The Close Button */
+	.close {
+		color: #ffffff;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: hotpink;
+		text-decoration: none;
+		cursor: pointer;
+	}

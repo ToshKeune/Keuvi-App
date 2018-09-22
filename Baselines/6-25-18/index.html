@@ -1,0 +1,144 @@
+<html>
+<style type="text/css">
+	.buttonNext {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.buttonBack {
+    background-color: #008CBA; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.buttonAnswer {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	.underline{
+	text-decoration: underline;	
+	}
+
+	.pFill {
+    background-color: #778899 ; 
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+	}
+
+	.pFillChecked {
+    background-color: #52a9ff; 
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+	}
+
+	.contentContainer{
+		font-size: 20px;
+		color: #4B9CD3	;
+	}
+
+	.promptContainer{
+		font-size: 20px;
+		color: #4B9CD3	;
+	}
+
+	.lessonContainer{
+		font-size: 36px;
+		color: #4B9CD3	;
+		font-weight: bold;
+	}
+
+	.pageIndicator{
+		font-size: 24px;
+		background-color: #4B9CD3;
+		color: black;
+	}
+
+</style>
+
+
+
+<body class="bodyContainer">
+	<div id="contentContainer" class="contentContainer" style="position:absolute;top:0px;left:0px;right:0px;bottom:20%;" onclick="styleOnClick();"></div>
+	<div id="controlsContainer" style="position:absolute;top:80&;left:0px;right:0px;bottom:0px;"></div>
+	<div id="pageIndicator" class="pageIndicator" style="position:absolute;top:80&;left:40%;right:40%;bottom:0px;text-align:center;"></div>	
+	<div id="promptContainer" class="promptContainer" style="visibility:hidden;position:absolute;top:0px;left:0px;right:0px;bottom:0px;background-color:black;"></div>
+	<div id="lessonContainer" class="lessonContainer" style="visibility:visible;position:absolute;top:0px;left:0px;right:0px;bottom:0px;background-color:black;"></div>
+
+</body>
+
+
+<footer id="controller">
+<form>
+	<input type="hidden" id="pageId" value="0">
+	<input type="hidden" id="styleId" value="0">
+	<input type="hidden" id="styleDirection" value="1">	
+</form>
+
+
+<script type="text/javascript" id="loadLesson">
+	var loadedLessons = [];
+	var loadedLessonsJS = [];
+	loadedLessons.push("This is a test of a few types of Qs"); 
+	loadedLessonsJS.push("testLesson"); 
+	loadedLessons.push("Test grammourmatics"); 
+	loadedLessonsJS.push("testLesson2"); 
+
+
+	function listLessons(){
+	document.getElementById('lessonContainer').style.visibility = "visible"	
+	document.getElementById('lessonContainer').innerHTML = "<div style='text-decoration: underline;'>Here are your available loaded lessons:</div></br>";
+		for (var i =0; i < loadedLessons.length; i++) {
+			document.getElementById('lessonContainer').innerHTML += "</br><div onclick='loadLesson(\""+loadedLessonsJS[i]+"\")'>"+loadedLessons[i]+"</div>"
+		}
+	}
+
+
+	function loadLesson(lessonName){
+	document.getElementById('lessonContainer').style.visibility = "hidden"	
+	var lesson = document.createElement('script');
+	lesson.setAttribute('src',lessonName+'.js');
+	document.head.appendChild(lesson);
+	}
+
+	//loadLesson("testLesson");
+
+	listLessons();
+
+
+</script>
+
+
+
+</footer>
+
+
+
+
+</html>

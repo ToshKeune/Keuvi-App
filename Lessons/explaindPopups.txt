@@ -1,0 +1,157 @@
+		function comboExplained(firstQ, secondQ) {
+		// This function coordinates explaining the right answer for combined questions. 
+		// Call this function with QnDIV and Qn+1DIV to expedite processing
+	
+		// Reset the 2 sets of answersa
+		resetAnswers(firstQ.slice(1,2));
+		resetAnswers(secondQ.slice(1,2));	
+		
+		// create empty explained array
+		var explained = [];
+		//var targetResult = firstQ;	
+		var combinedIndex = "Q"+firstQ.slice(1,2)+secondQ.slice(1,2);
+		// alert("Combo Index "+combinedIndex);
+		var newArrayIndex = mixed.indexOf(combinedIndex);
+		
+		//alert("First Paragraph Index "+comboStartPara[mixed.indexOf(combinedIndex)]);
+		//alert("Last Paragraph Index "+comboLastPara[mixed.indexOf(combinedIndex)]);
+		
+		var i =  comboStartPara[newArrayIndex];
+		// alert("Is the Combo Expo Written? "+comboWritten[newArrayIndex]);
+		// write the content of the explaind array elements that go with this question alert(written[targeted]);
+		if (comboWritten[newArrayIndex]==false) {
+			// Run through the for loop to set up explanation
+			//alert("building expanation");		
+			for (i = comboStartPara[newArrayIndex]; i <= comboLastPara[newArrayIndex]; i++) {
+				//alert("Index= "+i);
+				explained += comboParagraphs[i] + "<br>";
+				//alert("Output = "+explained);
+			}
+			comboWritten[newArrayIndex]=true;
+		}	
+		else if (comboWritten[newArrayIndex]==true) {
+			// Blank out the explanation and reset comboWritten
+			//alert("clearing explanation");
+			explained = [];
+			comboWritten[newArrayIndex]=false;
+		}
+		else  {
+			alert("Impossible Logic");
+		}
+		// construct calling parameter for displayExpo call
+		var cExpoParameter = "C"+firstQ.slice(1,2)+secondQ.slice(1,2)+"DIV"; 
+		//alert(cExpoParameter);		
+		
+		//alert("At Start of explaind"+targeted);
+		// Write the built explanation to the right HTML element 
+		document.getElementById(cExpoParameter).innerHTML = explained;    
+	
+	}
+	
+	
+		function explaind(q){
+			// In the cases below we can put most HTML tags so we could probably popup an image to explain a question
+			// Use an accordion, modal box or toggling class to display/diaappear this content. 
+			
+			// Setup variables - this combination supports up to 10 paragraph but it requires empty paragraphs
+			// Using an array of paragraphs (with the ly set up an array of indexs and use them
+			//alert("In explaind");
+			var explained = [];
+			var targeted = q.target.value;
+			// alert("At Start of explaind"+targeted);
+			var targetResult = "Q" + targeted.toString() + "DIV";	
+			//alert("TargetResult "+targetResult);
+			var i = startPara[targeted];
+			//alert("Initial i="+i);
+			//alert(written[targeted]);
+			
+			if (written[targeted]==false) {
+				// Run through the for loop to set up explanation
+				//alert("building expanation");		
+				for (i = startPara[targeted]; i <= lastPara[targeted]; i++) {
+					//alert("Index= "+i);
+					explained += paragraphs[i] + "<br>";
+					//alert("Output = "+explained);
+				}
+				written[targeted]=true;
+				// restore the Answers
+				//alert (targeted);  
+				resetAnswers(targeted);
+			}	
+			else if (written[targeted]==true) {
+				// Blank out the explanation
+				//alert("clearing explanation");
+				explained = [];
+				written[targeted]=false;
+			}
+			else  {
+				alert("Impossible Logic");
+			}
+			//alert("At Start of explaind"+targeted);
+			// Write the built explanation to the right HTML element 
+			document.getElementById(targetResult).innerHTML = explained;    
+		}
+		
+		function englishExplaind(q){
+			// In the cases below we can put most HTML tags so we could probably popup an image to explain a question
+			// Use an accordion, modal box or toggling class to display/diaappear this content. 
+			
+			// Using an array of paragraphs (with the ly set up an array of indexs and use them
+			//alert("In englishExplaind");
+			var firstOptionValue = 65;
+			var explained = [];
+			//alert("Set Value "+q.currentTarget.attributes.value);
+			//alert ("Text Color "+englishMsgTextColor);
+			var selected = q.target.className.slice(2,3);
+			//alert(selected); 
+			// convert Selection letter to 
+			var targeted = selected.charCodeAt(0)- firstOptionValue;  
+			//alert(targeted);			
+		
+			var targetResult = q.target.className; // "Q" + targeted.toString() + "DIV";	
+			//alert("TargetResult "+targetResult);
+			var i = startEngPara[targeted];
+			//alert("Initial i="+i);
+			//alert(written[targeted]);
+			
+			if (englishWritten[targeted]==false) {
+				// Run through the for loop to set up explanation
+				//alert("building expanation");		
+				for (i = startEngPara[targeted]; i <= lastEngPara[targeted]; i++) {
+					//alert("Index= "+i);
+					explained += paragraphs[i] + "<br>";
+					//alert("Output = "+explained);
+				}
+				englishWritten[targeted]=true;
+				//alert("Number of elements in class "+document.getElementsByClassName(targetResult).length);
+				// Write the built explanation to the right HTML element 
+				oldText = document.getElementsByClassName(targetResult)[0].innerText;
+				alert(oldText);
+				document.getElementsByClassName(targetResult)[0].innerHTML = explained; 
+				// Complete the pseudo-modal definition
+				document.getElementsByClassName(targetResult)[0].style.position="relative";
+				document.getElementsByClassName(targetResult)[0].style.border="0px solid #9933ff";
+				document.getElementsByClassName(targetResult)[0].style.position="relative";
+				document.getElementsByClassName(targetResult)[0].style.bottom="0px";
+				document.getElementsByClassName(targetResult)[0].style.left="0px";
+				document.getElementsByClassName(targetResult)[0].style.backgroundColor=englishMsgBg;
+				document.getElementsByClassName(targetResult)[0].style.color=englishMsgTextColor;				
+				
+				// set the written flag to ensure we can sure reset the message 
+				englishWritten[targeted]=true;
+			}	
+			else if (englishWritten[targeted]==true) {
+				// Blank out the explanation
+				//alert("clearing explanation");
+				explained = [];
+				englishWritten[targeted]=false;
+				// Write the built explanation to the right HTML element 
+				document.getElementsByClassName(targetResult)[0].innerHTML = oldText;
+				document.getElementsByClassName(targetResult)[0].style.backgroundColor=background;
+				document.getElementsByClassName(targetResult)[0].style.color=textColor;					
+				// document.getElementsByClassName(targetResult)[0].style.display="none";
+			}
+			else  {
+				alert("Impossible Logic");
+			}
+		

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+  <html lang="en">
+    
+  <head>
+    <title>English Lesson - Commas</title> 
+    <meta charset="utf-8"> 
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">  
+  
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sandbox/SATPrep.css">    
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  </head>
+    
+ <body>
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-6">  
+				<p style="height:1rem"></p> 			
+				<div id=page_1>
+				<p class="rdngHdng">Commas</p>
+					<p>Commas probably show up on the test more frequently than any other grammar topic. Luckily, all of the commas used on the test boil down to three basic uses. We'll see commas used to separate items in lists, to mark off dependent clauses, and to connect independent clauses.</p>
+				<p class="rdngHdng">Lists</p>
+					<p>We use commas between each of the items in a list:</p>
+					<p><span class="bAqua">I had to buy apples, bananas, and cucumbers.</span></p> 
+					<p>The test defaults to the Oxford comma, the one right before the and. It’s a good idea to do the same on the essay section, just to be safe.</p>
+					<p><button value="2" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_2 style="display: none">
+					<p class="rdngHdng">Multiple Choice</p>
+					<p style="height:1rem"></p> 
+					<p>Select the correct punctuation for the following sentence</p>
+					<p id="Q1"><u>I did my laundry made my bed and performed my nightly breathing exercises.</u></p>		
+					<ol id="exampleFormControlSelect1" type="A">
+							<li><a href="#Q1" class="Q1A" value="1" onclick="englishExplaind(event)">NO CHANGE</a></li>
+							<li><a href="#Q1" class="Q1B" value="2" onclick="englishExplaind(event)">I did, my laundry, made, my bed, and performed, my nightly breathing exercises.</a></li>
+							<li><a href="#Q1" class="Q1C" value="3" onclick="englishExplaind(event)">I did my laundry, made my bed, and performed my nightly breathing exercises.</a></li>
+							<li><a href="#Q1" class="Q1D" value="4" onclick="englishExplaind(event)">I did, my laundry, made my bed, and performed my nightly breathing exercises.</a></li>
+					</ol>		
+			
+					<p style="height:1rem"></p> 
+					<p><button  id="fp_page_2" value="3" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_3 style="display: none">
+					<p class="rdngHdng">Dependent Clauses</p>
+						<p>We use commas to separate dependent clauses from the independent clauses they modify.</p>
+						<p>An <span class="bAqua">independent clause</span> has a subject, a verb, and a fully fleshed out thought. It's independent because it can stand alone as its own sentence.</p>
+						<p>A <span class="bAqua">dependent clause</span>, on the other hand, is a word or phrase which doesn’t amount to a full sentence. It can't stand on its own; therefore, it is dependent on another clause.</p>
+						<p>Basically, we can add a dependent clause to an independent one if we put commas around the dependent clause. The dependent clause can go at the beginning, middle, or end of the s	entence.</p> 
+					<p><button  id="fp_page_3" value="4" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_4 style="display: none">
+					<p class="bAqua">Introductions</p>
+						<p>Dependent clauses at the beginning of sentences serve as introductions. They typically provide us with some kind of setting for the rest of the sentence.</p> 
+						<pThese introductory clauses can stretch from one word all the way to long, mellifluous phrases.</p> 
+						<p><i>First, I drove to the store.</p>	
+						<p >As rain lashed against my windows and wind tore the trees out of the ground, I drove to the store.</i></p>
+					<p><button id="fp_page_4" value="5" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_5 style="display: none">
+					<p class="bAqua">First, I drove to the store.</p> 
+					<p>In this sentence, <span class="bAqua">First</span> is our dependent clause. It gives us the context for the rest of the sentence.</p> 
+					<p><span class="bAqua">I drove to the store</span> is our independent clause. It could stand alone as a full sentence.</p> 
+					<p>We separate the dependent clause from the independent one with a comma. We should be able to take everything before the comma (<span class="bAqua">First</span>) out and still enough for a sentence (<span class="bAqua">I drove to the store</span>).</p>
+					<p><button id="fp_page_5" value="6" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_6 style="display: none">
+					<p class="bAqua"> As rain lashed against my windows and wind tore the trees out of the ground, I drove to the store.</p>
+					<p><span class="bAqua">As rain lashed against my windows and wind tore the trees out of the ground</span> is our dependent clause here.</p> 
+					<p>Even though it's a much longer descriptive phrase than  <span class="bAqua">First</span>, this string of words still doesn't have enough to stand on its own as a sentence.</p>
+					<p><span class="bAqua">I drove to the store</span> is our independent clause again.</p> 
+					<p>We use a comma to mark the end of the dependent clause and the beginning of the independent clause. If we were to take out the dependent clause, we’d still be left with a perfectly fine sentence.</p> 
+					<p><button  id="fp_page_6" value="7" onclick="showNextPage(event)">Next Page >></button></p>
+					</div>
+				<div id=page_7 style="display: none">
+					<p class="rdngHdng">Interruptions</p>
+					<p>We can move the dependent clause to the middle of the sentence, interrupting the independent clause with important details. We put commas at the beginning and at the end of the dependent clause to set it apart from the independent one.</p> 
+					<p>Michael Jordan, therefore, is widely regarded as the greatest basketball player of all time.</p>
+					<p>Michael Jordan, who played his college basketball at the University of North Carolina, is widely regarded as the greatest basketball player of all time.</p>
+					<p><button  id="fp_page_7" value="8" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_8 style="display: none">
+					<p class="bAqua">Michael Jordan, therefore, is widely regarded as the greatest basketball player of all time.</p>
+					<p>In this sentence, <span class="bAqua">therefore</span> serves as our interrupting dependent clause. It ties our present sentence back to the previous one (which presumably detailed Jordan's many accomplishments).</p>
+					<p><span class="bAqua">Michael Jordan is widely regarded as the greatest basketball player of all time</span> is the (interrupted) independent clause.</p> 
+					<p>We put commas before and after <span class="bAqua">therefore</span>. We should be able to momentarily lift the material in between the commas out and still have enough material for a full sentence (<span class="bAqua">Michael Jordan is widely regarded as the greatest basketball player of all time</span>).</p>
+					<p><button  id="fp_page_8" value="9" onclick="showNextPage(event)">Next Page>></button></p>
+				</div>
+				<div id=page_9 style="display: none">
+					<p class="bAqua">Michael Jordan, who played his college basketball at the University of North Carolina, is widely regarded as the greatest basketball player of all time.</p>
+					<p>Here, the dependent clause is <span class="bAqua">who played his college basketball at the University of North Carolina</span>. It provides an important descriptive detail.</p> 
+					<p><span class="bAqua">Michael Jordan is widely regarded as the greatest basketball player of all time</span> is our independent clause again.</p>
+					<p>We put commas around <span class="bAqua">who played his college basketball at the University of North Carolina</span> to mark it off from the rest of the sentence. If we took the words between the commas out, we'd still have a full independent clause.</p>
+				<p><button  id="fp_page_9" value="10" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_10 style="display: none">
+					<p class="rdngHdng">Conclusions</p>
+					<p>We can also add dependent clauses at the end of sentences, concluding the sentence with a new piece of information.</p> 
+					<p><i>Virginia Woolf wrote several beloved works of fiction and nonfiction, even though women faced countless obstacles to writing and publishing books during her lifetime.</i></p>
+				<p><button  id="fp_page_10" value="11" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_11 style="display: none"> 
+					<p class="bAqua">Virginia Woolf wrote several beloved works of fiction and nonfiction, even though women faced countless obstacles to writing and publishing books during her lifetime.</p> 
+					<p>Here, our dependent clause is <span class="bAqua">even though women faced countless obstacles to writing and publishing books during her lifetime</span>. This detail complicates the information that came before it.</p>
+					<p>Our independent clause is <span class="bAqua">Virginia Woolf wrote several beloved works of fiction and nonfiction</span>, which could stand as its own sentence.</p>
+					<p>We put a comma before the dependent clause. If we lift the string of words after the comma out, we still have a functional sentence.</p>
+				<p><button  id="fp_page_11" value="12" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_12 style="display: none">
+					<p><strong>Where should we put the comma(s) in these sentences?</strong></p>
+					<p><i>Please click in this sentence where you think the comma should go.</i></p>
+					<p><span id="S1s1" onclick="engExpo('5')">Although I didn't know how to get there</span><span id="S1s2" onclick="engExpo('6')">&nbsp&nbsp</span><span id="S1s3" onclick="engExpo('7')">I was too proud to ask for directions.</span></p> 
+					<p><span id="S2s1" onclick="engExpo('8')">I kept driving straight</span><span id="S2s2" onclick="engExpo('9')">&nbsp&nbsp</span><span id="S2s3" onclick="engExpo('10')">even though I suspected that I was just going further and further away from my destination.</span></p>
+					<p><span id="S3s1" onclick="engExpo('11')">My car</span><span id="S3s2" onclick="engExp('12')">&nbsp&nbsp</span><span id="S3s3" onclick="engExpo('13')">which has a leaky gas tank</span><span id="S3s4" onclick="engExpo('14')">&nbsp&nbsp</span><span id="S3s5" onclick="engExpo('15')">ran out of fuel.</span></p> 
+					<p><span id="S4s1" onclick="engExpo('16')">Next</span><span id="S4s2" onclick="engExpo('17')">&nbsp&nbsp</span><span id="S4s3" onclick="engExpo('18')">my engine</span><span id="S4sect4" onclick="engExpo('19')">&nbsp&nbsp</span><span id="S4s5" onclick="engExpo('20')">which has been defective for years</span><span id="S4s6" onclick="engExpo('21')>&nbsp&nbsp</span><span id="S4s7" onclick="engExpo('22')">exploded.</span></p>
+				<p><button  id="fp_page_12" value="14" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_14 style="display: none">
+					<p class="rdngHdng">Independent Clauses</p>
+					<p>Finally, we can use a comma and a coordinating conjunction to connect two fully independent clauses.</p> 
+					<p>The coordinating conjunctions are listed in the acronym <strong>FANBOYS:</strong></p>
+						<ul>
+							<li><span class="bAqua"><strong>F</strong></span>or</li>
+							<li><span class="bAqua"><strong>A</strong></span>nd</li>
+							<li><span class="bAqua"><strong>N</strong></span>or</li>
+							<li><span class="bAqua"><strong>B</strong></span>ut</li>
+							<li><span class="bAqua"><strong>O</strong></span>r</li>
+							<li><span class="bAqua"><strong>Y</strong></span>et</li>
+							<li><span class="bAqua"><strong>S</strong></span>o</li>
+						</ul>	
+					<p>We can use a comma plus an appropriate FANBOYS to connect two ideas.</p> 
+					<p>I tore myself away from the dinner table, for I had already consumed more calories than an Olympic swimmer.</p> 
+					<p >We shared a pizza, and I ate a meatball sandwich, a bag of chips, and an entire order of buffalo wings on my own.</p> 
+				<p><button id="fp_page_14" value="15" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_15 style="display: none">
+					<p>I tore myself away from the dinner table, for I had already consumed more calories than an Olympic swimmer.</p>
+					<p>I tore myself away from the dinner table is our first independent clause: it could stand alone as its own sentence.</p> 
+					<p>We use a comma to mark the send of this first clause. Then, we add for to connect the two ideas. For indicates cause-and-effect. We always want to make sure that the FANBOYS we’re using to connect the clauses itself makes sense. We want to make sure it’s indicating the right connection.</p>
+					<p>I had already consumed more calories than an Olympic swimmer is our second independent clause. We always want to make sure that we have full independent clauses on both sides of the FANBOYS.</p>
+				<p><button id="fp_page_15" value="16" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_16 style="display: none">
+					<p>We shared a pizza, and I ate a meatball sandwich, a bag of chips, and an entire order of buffalo wings on my own.</p>
+					<p>We shared a pizza can stand as its own independent clause.</p> 
+					<p>We mark the end of that phrase with a comma, then add and to connect the two ideas. And makes a lot of sense here: we’re just adding the two ideas (what they shared plus what the speaker ate alone) together.</p>
+					<p >I ate a meatball sandwich, a bag of chips, and an entire order of buffalo wings on my own is also a perfectly fine independent clause, though it’s a terrible dietary plan.</p> 
+				<p><button id="fp_page_16" value="17" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_17 style="display: none">
+					<p>Common mistakes to watch out for.</p>
+					<p><i>I knew all of the answers on the test, I was sure to get an A.</i></p>
+					<p>This sentence is incorrect because it just smushes two independent clauses together with no FANBOYS. We can never connect two independent clauses together with just a comma.</p>
+					<p>We could fix this sentence by adding a FANBOYS.</p>
+					<p>I knew all of the answers on the test, therefore, I was sure to get an A.</p>
+					<p>This is a comma splice.</p> 
+					<p>Here we have our two clauses connected by a transitional expression. Therefore serves as an interrupting dependent clause— that's why we put commas around it. That means we should be able to take therefore out of the sentence and still have one intact independent clause around it.</p>
+					<p>However, if we take therefore out ofthis sentence, it becomes I knew all of the answers on the test I was sure to get an A. That sentence has way too much going on.</p> 
+				<p><button id="fp_page_17" value="18" onclick="showNextPage(event)">Next Page >></button></p>
+				
+				<div id=page_18 style="display: none">
+					<p class="rdngHdng">Does this work?</p>
+					<p>I wanted to go to the beach, but couldn’t because of the rain.</p> 
+					<p>I knew I had aced the test, so I took the rest of the day off and watched random youtube videos.</p>
+					<p>I wanted to play some basketball, so my ball was flat.</p> 
+				<p><button id="fp_page_18" value="19" onclick="showNextPage(event)">Next Page >></button></p>
+				</div>
+				<div id=page_19 style="display: none">
+					<p class="rdngHdng">Review</p>
+					<p>Comma questions on the test will task us with correctly placing commas in lists, around dependent clauses, and in between independent clauses.</p>
+					<p class="rdngHdng">Lists</p>
+					<p>We use commas to separate items in a list.</p>
+					<p>In order to make dinner tonight, I need <span class="bAqua">pasta, diced tomatoes, cream, and bread.</span></p>
+					<p class="rdngHdng">Dependent clauses</p>
+					<p>We can also use commas to set a dependent clause apart from the beginning, middle, or end of an independent clause.</p>
+					<p><span class="bAqua">First</span>, I left to go to the grocery store.</p>
+					<p>I realized, <span class="bAqua">however</span>, that I’d locked my keys inside my house.</p>
+					<p>I had to break in through the window, <span class="bAqua">even though it’s my own house.</span></p>
+					<p class="rdngHdng">Independent Clauses</p>
+					<p>Finally, we can use a comma and an appropriate FANBOYS to connect two independent clauses that are related to each other.</p>
+					<p id="fp_page_19">A policeman saw me trying to smash my window, <span class="bAqua">and</span> he immediately arrested me.</p>
+				<p><button id="fp_page_19" value="20">Last Page >></button></p>	
+				</div>
+</div>		
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	   
+
+
+ 	<script type="text/javascript">
+		<!-- Basic Script Variable --> 
+		// define variables to deal with linked questions
+		//var firstAnswer=null;
+		//var secondAnswer=null;
+		
+		var background = "#ffffff";  // Sets the background to white
+		var textColor = "#000000";     // Sets the basic text color to Black
+		var oldText = [];
+		// define variables to control the display of explanations
+		//                0  1   2   3   4   5   6   7   8   9  10  11
+		var startPara = [ 0, 0];
+		var lastPara =  [ 0, 18];
+		
+		// Before attributes values for resetting the display
+		var oldBorder;
+		var oldBackground;
+		var oldTextColor;
+		
+		// variable to control display of explanations in English language explanations
+		//                   0  1  2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22   
+		var startEngPara = [ 0, 0, 3, 10, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36];
+		var lastEngPara =  [ 0, 2, 9, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36];
+		//                        0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16     17      18    19     20     21     22
+		var englishWritten = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+        // Display attributes for English lessons 
+		var englishMsgBg = "#9933ff";
+		var englishMsgTextColor="#ffffff";
+		
+		// Remember these indices are Zero based so to have written[11] need 12 entries
+        //                  0      1      2      3      4      5      6      7      8      9     10     11 
+		var written = [ false, false, false, false, false, false, false, false, false, false, false, false];
+		//                0      1     2      3      4      5      6      7      8      9      10     11     12     13      14     15    16      17     18    19     20 
+		var displayed = [ false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+		//var mixed = ["Q23", "Q78"];	
+		
+		// Index for removing the unselected wrong answers
+		var questionOptions = ["A", "B", "C", "D"];	
+		
+		// Explanation Text elements to display
+		var paragraphs = new Array(	  
+			/* 0 */  "Do we have a list of chores here?",   
+			/* 1 */	 "How do we separate items in a list from each other?",  
+			/* 2 */	 "",  
+  			/* Question 1 - Option 2 */			
+			/* 3 */	 "We put commas between items in a list.",           
+			/* 4 */	 "What are the items in our list?" ,  
+			/* 5 */	 "That's right the list contains: We put commas between items in a list. What are the items in our list? We only need to put commas between those items.",  
+			/* 6 */	 "my laundry",
+			/* 7 */	 "made my bed",
+			/* 8 */	 "and performed ...",	
+			/* 9 */  "We only need to put commas between those items.",
+			/* Question 1 - Option 3 */			
+			/* 10 */ "<b>Right</b>",
+			/* 11 */ "We have three items-- ",				
+			/* 12 */ "did my laundry,",
+			/* 13 */ " made my bed,",
+			/* 14 */ "and performed my nightly breathing exercises--",
+			/* 15 */ "in this list. We separate them from each other with commas. ", 
+			/* 16 */ "We don't need commas inside of those items themselves.",				
+			/* Question 1 - Option 4 */
+			/* 17 */ "Are all of these commas necessary? Do we need the first comma, the one after 'did?'",  
+			/* 18 */ "The test writers love to throw in these answer choices that are mostly right but have one sly mistake thrown in somewhere. This is especially the case with comma questions. Be very care to make sure that an answer choice doesn't have some pesky, unnecessary comma thrown in somewhere.",
+			/* Where do the commas go - trial 1  */	 			
+			/* 19 */ "What's our dependent clause here? What's our independent clause? Where do we transition from one to the other?", 	
+			/* 20 */ "<b>Exactly,</b><br><i>Although I didn't know how to get there</i>is our dependent clause, which we separate from our independent clause (<i>I was too proud to ask for directions</i>).<br> with a comma",
+			/* 21 */ "What's our dependent clause here? What's our independent clause? Where do we transition from one to the other?",
+			/* Where do the commas go - trial 2  */				
+			/* 22 */	"If they click on the wrong thing:<br>Where does one idea seem to end and another one begin?<br>Where does the sentence change directions?",
+			/* 23 */	"<b>Exactly</b><br><i>Although I didn't know how to get there</i> is our dependent clause, which we separate from our independent clause<br><i>I was too proud to ask for directions</i>).",
+			/* 24 */	"If they click on the wrong thing:<br>Where does one idea seem to end and another one begin?<br>Where does the sentence change directions?",
+            /* Does this work - response 3  */  			
+			/* 25 */	"My car is a singular noun, no commas needed here",
+			/* 26 */	"Good placement for the first comma you have isolated the subject noun.<br><b>Now where does the second one go?</b>",
+			/* 27 */	"Hmm... If we take the material in between the commas out, are we left with one, complete sentence?",
+			/* 28 */	"<b>Perfect</b><br>We can test our comma placement by taking the string of words between the commas out.<br>Then, we're left with <i>My car ran out of fuel.</i>. That's a perfectly fine, if somewhat less detailed, sentence on its own.",
+			/* 29 */	"Response for wrong guesses after second comma location",	
+			/* Does this work - response set 4 */  
+			/* 30 */	"Incorect response at start of sentence",
+			/* 31 */	"First correct placement", 
+			/* 32 */	"Incorrect response between first and second commas",
+			/* 33 */	"Second correct placement",
+            /* 34 */	"Incorect response between second and third comma or after second one - your choice",
+			/* 35 */	"Third correct placement",
+			/* 36 */	"Incorrect guesses at the end of the sentence",			
+			/* 37 */	"",				
+            /* Question 7 & 8 */  
+			/* 38 */	"",
+			/* 39 */	"Answer 7 and 8 Paragraph 1 of the <b>answer!</b>",
+			/* 40 */	"Answer 7 and 8 Paragraph 2 of the answer!",				
+			/* 41 */	"Answer 7 and 8 Paragraph 3 of the answer!",				
+            /* Question 9 */  
+			/* 42 */	"Paragraph 1 of the <b>answer!</b>",	
+			/* 43 */	"Answer 9 Paragraph 2 of the <b>answer!</b>",
+			/* 44 */	"Answer 9 Paragraph 3 of the answer!",
+			/* 45 */	"Answers B and C are first order thoughts.",					
+            /* Question 10 */  
+			/* 46 */	"Answer 10 Paragraph 1 of the <b>answer!</b>",
+			/* 47 */	"Answer 10 Paragraph 1 of the <b>answer!</b>",
+			/* 48 */	"Answer 10 Paragraph 3 of the answer!",
+			/* 49 */	"Answer C is partially there&#58 the author is certainly enthusiasm. However&#44 skepticism would be a contradictory reaction in this case.",
+			/* 50 */	"Answer D is also partially right. The author is keenly interested. However&#44 we never get any sense of anger.",
+            /* Question 11*/  
+			/* 51 */	"Answer 11 Paragraph 1 of the <q><b>answer!</b></q>",
+			/* 52 */	"Answer 11 Paragraph 2 of the <b>answer!</b>",
+			/* 53 */	"Answer 11 Paragraph 3 of the answer!",
+			/* 54 */	"Answer D is a tad extreme. The author never calls these researchers cowards. The author merely states that there are followups ripe for completion." 
+			);
+			
+		function showNextPage(e) {
+		
+			// alert("In showNextPage");
+			// Address this command to the value set in the call
+			var targetPage = "page_"+e.target.value;
+			var focalTarget = "fp_page_"+e.target.value;
+			//alert("Next Page "+targetPage);
+			//alert("Focal Point "+focalTarget);
+			var x = document.getElementById(targetPage);
+			//alert("Event called with"+x);
+
+			if (displayed[e.target.value] == false) {
+					document.getElementById(targetPage).style.display = "block";
+					document.getElementById(focalTarget).focus({preventScroll:false});
+					displayed[e.target.value] = true;
+			} else {
+					document.getElementById(targetPage).style.display = "none";
+					displayed[e.target.value] = false;
+			}
+		}
+			
+		var rightResponses = ["Q1A", "Q2B", "Q3C", "Q4D", "Q5A", "Q6B", "Q7C", "Q8D", "Q9A", "Q10B", "Q11C"]; 
+
+		/*  stackoverflow example - loading a script in a script
+		function dynamicallyLoadScript(url) {
+			var script = document.createElement("script"); // Make a script DOM node
+			script.src = url; // Set its src to the provided URL
+
+			document.body.appendChild(script); // Add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+		}
+		
+		dynamicallyLoadScript("./Keuvi.js"); 
+		*/
+		// src="./Keuvi.js";
+		
+		//  These are the functions needed to make the Questions work as desired.
+		// POSSIBLE:  Add function to implement reading popups 
+		// DONE:  Implement selected Display toggling device. 
+        // DONE:  Bold selected text 
+		// TODO:  Redisplay Answers when show 
+		// TODO:  
+		
+		function answerCheck(qid, response) {
+			var el = document.getElementById(response);
+
+			// alert("Right Responses = "+rightResponses.indexOf(response));         // Debug assist
+			// alert(rightResponses[0]);                        // More debug assist  
+			// alert(rightResponses.indexOf(response) != -1);   // Third debug line
+			
+			if (rightResponses.indexOf(response) != -1 ) {    // Returns negative one if response not found in rightResponses otherwise it is
+				el.style.color = "#66ff33";                   // set to specific shade using color picker
+				el.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+				// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+				this.focus();
+
+                // Having set the Right Answer to bold Bright Green in the above 2 lines clear the remaining options.
+				// Remove third letter of response from set of questions
+				// debugging lines
+				// alert(questionOptions);
+				// alert(response.slice(2));
+
+				// remove the selected answer
+				removeOption(response);
+				// alert("After cleaning "+questionOptions);	
+
+				// Clear rest of answers
+				clearOptions(qid, response);	
+
+				// Reset the array of options
+                questionOptions = ["A", "B", "C", "D"];  // TODO:  Generalize past 4 options
+				
+				// TODO: Do we need to keep a list of questions that can still be answered
+			}
+			else 
+			{
+				el.style.color = "#ffffff"; // where background would be is a var set in the right scope
+				removeOption(response);	    // remove the selected answer
+				document.getElementById(qid).focus({preventScroll:true});				
+			}
+			el.style.backgroundColor = background;  // set where it covers the reading 
+			//alert(e.target.value);
+			// If error count == 0
+			// First Time Right++ 
+			// else Right++
+		}
+
+		// Helper function to clear used answer options
+		function removeOption(response) {
+			// Remove third letter of the user response from set of questions
+			//alert(questionOptions);
+			// alert(response.slice(response.length-1));
+			switch (response.slice(response.length-1)) {
+				case 'A':
+				  questionOptions[0]="";   
+				  break
+				case 'B':
+				  questionOptions[1]="";   
+				  break;
+				case 'C':
+				  questionOptions[2]="";   
+				  break;
+				case 'D':
+				  questionOptions[3]="";   
+				  break;
+				}
+			}	
+		
+		// Helper function to clear other Answer Options  
+		function clearOptions(qid, response) {
+			// alert("Item: "+item);
+			// alert("Index: "+index);
+			// alert("In clearing options "+questionOptions);
+			var m;
+			for (m = 0; m <= 3; m++) {
+				var toClear = questionOptions[m];
+				//alert("to Clearing "+toClear);
+				// Do not clear the empty indices
+				if (toClear != "") {
+					// Construct the ID of the answer option to remove
+					tempResponse = response.slice(0,response.length-1)+toClear;
+			
+					//alert(tempResponse);
+					// remove this answer option
+					var tel = document.getElementById(tempResponse);
+					tel.style.color = "#ffffff"; 
+					this.focus({preventScroll:true});
+
+				}
+				this.focus({preventScroll:true});
+			}
+		}
+		
+		// Restores the questions when called when the explanation is shown
+		function resetAnswers(targeted) {
+
+			// alert("Right Responses = "+rightResponses.indexOf(response));         // Debug assist
+			// alert(rightResponses[0]);                        // More debug assist  
+			// alert(rightResponses.indexOf(response) != -1);   // Third debug line
+			var m;
+			for (m = 0; m <= 3; m++) {
+				toReset = "Q"+targeted+questionOptions[m].toString();
+				alert(toReset);
+				var rel = document.getElementById(toReset);				
+				if (rightResponses.indexOf(toReset) != -1 ) {    // Returns negative one if response not found in rightResponses otherwise it is
+					rel.style.color = "#66ff33";                   // set to specific shade using color picker
+					rel.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+					// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+					this.focus();
+				}
+				else {
+					rel.style.color = "#000000";                   // otherwise set to black
+					rel.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+				
+					// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+					this.focus();
+				}
+			}	
+		}
+			
+		//  The code for handling the math is sketched out below.
+		function showMath(id, nextStep, Steps) {
+			// Set up a list of steps (may come from outside)
+			// Set up the root name
+			var nel = document.getElementById(id);
+			var nextLefttRoot = "Left_lsn_idx_"
+			var nextRightRoot = "Right_lsn_idx_"
+
+			for (x in nextStep, nextStep + Steps) 
+			{
+				nextLeft = nextLefttRoot + x.toString();
+				nextRight = nextRightRoot + x.toString();
+				// Set explanation text to corresponding text variable set in secondary JavaScript file.  Example shown
+				// var nextLeftText = "Some specified text";
+				//  Set the left HTML 
+				document.getElementById(nextLeft).innerText = nextLeftText;
+
+				// Set the math image source 
+				document.getElementById(nextRight). innerHTML = "document.image.src = 'toString(nextRight)'";
+			}
+		}	
+		
+		function sLE(para2Display, displayAt, sleIndex){
+			// This functions full name is singleLineExplanation it is intended to be used to display a single paragraph 
+			// explanation at a selected location with a standardized name. 
+			// para2Display is the index in the arrayof response paragraphs where the single line is. 
+			// displayAt is the index to which standardized location to write this paragraph
+			// sleIndex is the index or count into an array of booleans set up to control the display of single line responess. 
+			
+			// Build the standardized location
+			var targetResult = "SLE_" + displayAt.toString();	
+			//alert("TargetResult "+targetResult);
+			// var i = startPara[targeted];
+			//alert("Initial i="+i);
+			//alert(written[targeted]);
+			
+			if (SLEwritten[sleIndex]==false) {
+				//alert("building expanation");		
+				alert (paragraphs[para2Display]);
+				document.getElementById(targetResult).style.position="relative";  // set to a relative positin
+       				
+				document.getElementById(targetResult).innerHTML = paragraphs[para2Display] + "<br>";
+				
+				//alert("Output = "+explained);
+				SLEwritten[sleIndex]=true;
+				// restore the Answers
+				alert (targeted);  
+			}	
+			else if (written[targeted]==true) {
+				// Blank out the explanation
+				//alert("clearing explanation");
+				document.getElementById(targetResult).innerHTML = [];
+				SLEwritten[sleIndex]=false;
+			}
+			else  {
+				alert("Impossible Logic");
+			}
+		}
+  
+		
+		function engExpo(index){
+			// In the cases below we can put most HTML tags so we could probably popup an image to explain a question
+			// Use an accordion, modal box or toggling class to display/diaappear this content. 
+			
+			// Using an array of paragraphs (with the ly set up an array of indexs and use them
+			//alert("In englishExplaind");
+			var firstOptionValue = 65;
+			var explained = [];
+			//alert("Set Value "+q.currentTarget.attributes.value);
+			//alert ("Text Color "+englishMsgTextColor);
+			
+			// Pseudo polymorph on the patterns of possible answers
+			alert(index)
+			
+			
+			
+			// The start of questionExtract
+			var selected = q.target.className.slice(2,3);
+			//alert(selected); 
+			// convert Selection letter to 
+			var targeted = selected.charCodeAt(0)- firstOptionValue;  
+			//alert(targeted);			
+		    // The end of questionExtract
+			
+			var targetResult = q.target.className; // "Q" + targeted.toString() + "DIV";	
+			//alert("TargetResult "+targetResult);
+			var i = startEngPara[targeted];
+			//alert("Initial i="+i);
+			//alert(written[targeted]);
+			
+
+			
+			if (englishWritten[targeted]==false) {
+				// Run through the for loop to set up explanation
+				//alert("building expanation");		
+				for (i = startEngPara[targeted]; i <= lastEngPara[targeted]; i++) {
+					//alert("Index= "+i);
+					explained += paragraphs[i] + "<br>";
+					//alert("Output = "+explained);
+				}
+				
+				// Read the before attributes for resetting the display
+				oldBorder = document.getElementsByClassName(targetResult)[0].style.border;
+				oldBackground = document.getElementsByClassName(targetResult)[0].style.backgroundColor;
+				oldTextColor = document.getElementsByClassName(targetResult)[0].style.color;
+				
+				englishWritten[targeted]=true;
+				//alert("Number of elements in class "+document.getElementsByClassName(targetResult).length);
+				// Write the built explanation to the right HTML element 
+				oldText = document.getElementsByClassName(targetResult)[0].innerText;
+				// alert(oldText);
+				document.getElementsByClassName(targetResult)[0].innerHTML = explained; 
+				// Complete the pseudo-modal definition
+				document.getElementsByClassName(targetResult)[0].style.position="relative";
+				document.getElementsByClassName(targetResult)[0].style.border="0px solid #9933ff";
+				document.getElementsByClassName(targetResult)[0].style.position="relative";
+				document.getElementsByClassName(targetResult)[0].style.bottom="0px";
+				document.getElementsByClassName(targetResult)[0].style.left="0px";
+				document.getElementsByClassName(targetResult)[0].style.backgroundColor=englishMsgBg;
+				document.getElementsByClassName(targetResult)[0].style.color=englishMsgTextColor;				
+				
+				// set the written flag to ensure we can sure reset the message 
+				englishWritten[targeted]=true;
+			}	
+			else if (englishWritten[targeted]==true) {
+				// Blank out the explanation
+				//alert("clearing explanation");
+				explained = [];
+				englishWritten[targeted]=false;
+				// Write the built explanation to the right HTML element 
+				document.getElementsByClassName(targetResult)[0].innerHTML = oldText;
+				document.getElementsByClassName(targetResult)[0].style.backgroundColor=oldBackground;
+				document.getElementsByClassName(targetResult)[0].style.color=oldTextColor;			
+				document.getElementsByClassName(targetResult)[0].style.border=oldBorder;				
+			}
+			else  {
+				alert("Impossible Logic");
+			}
+			
+   
+		}
+		  
+		function textExpo(e) {
+			// alert("In textExpo");
+			var expo = e.target.value;
+			// alert(expo);
+			var x = document.getElementById(e.target.value);
+			// alert(x);
+			switch (expo) {		
+			case 'T1Expo':
+				x.innerHTML = "Dubitable means uncertain, yielding to doubt.";	
+				break;
+				
+			case 'T2Expo':
+				x.innerHTML = "<b>Text 2 Popup</b>";	
+				break;
+				
+			case 'T3Expo':
+				x.innerHTML = "<b>Text 3 Pop-up</b>";	
+				break;
+
+			}	
+		}
+		
+				
+		function combined(e, firstQ, secondQ) {
+			// This function handles situations where two questions have to be answered together. 
+			// It is set up to accept two values then process the combined result of both.
+			// In this use of this function the questions are #2 and #3
+				
+			// alert("In Combined");
+			// alert(e.target.value);
+			// Process each of the inputs
+			
+			// Copy the event text to a string
+			var eventText = e.target.value;
+			var outTarget = "C"+firstQ.toString()+secondQ.toString()+"Explained";	
+			
+			if ( eventText.slice(1,2) = firstQ ) 
+			{
+				firstAnswer= eventText.slice(eventText.length-1).toUpperCase();
+			}
+			else if ( eventText.slice(1,eventText.length-1) = secondQ ) 
+			{
+				secondAnswer= eventText.slice(eventText.length-1);
+			}
+			else
+			{
+			// Raise Error
+			}
+				
+			// Now with both answers generate the response
+			if (firstAnswer != null && secondAnswer != null)
+			{
+				// Set up the new combined response token
+				combo = firstAnswer + secondAnswer;
+				
+				// alert (combo);
+				answerCheck("Q"+firstQ+secondQ, "Q"+firstQ+secondQ+combo);
+				
+			}
+			
+			if (firstAnswer == null && secondAnswer != null)
+			{
+				document.getElementById(outTarget).value = "Please select an answer to question "+firstQ.toString();
+				// error counter-increment
+			}	
+			
+			if (firstAnswer != null && secondAnswer == null)
+			{
+				document.getElementById(outTarget).value = "Please select an answer to question "+secondQ.toString();
+				// error counter-increment
+			}
+		}
+			
+			
+		function showResp(e) {
+			//alert("Getting There");
+            //alert(e.target.id);
+			// alert(e.target);
+			// alert(value);
+			// Convert e to qid and response
+			eventText = e.target.id;
+			//alert(eventText);
+			var eventTarget = eventText.slice(0,2)+"DIV"
+			answerCheck(eventText.slice(0,2)+"DIV", eventText);	
+			document.getElementById(eventText).focus({preventScroll:true});
+			return false;
+		}
+
+		
+    </script>
+		
+</body>
+    
+</html>

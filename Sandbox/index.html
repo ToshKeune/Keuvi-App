@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="SATPrep.css">
+    </head>
+
+
+
+<body class="bodyContainer">
+	<div id="contentContainer" class="contentContainer" style=
+	                                  "position:absolute;
+									  top:4px;
+									  left:4px;
+									  right:4px;
+									  bottom:20%;"
+									  onclick="styleOnClick();"></div>
+
+    <div id="controlsContainer" style="position:absolute;
+	                                   top:80&;
+									   left:0px;
+									   right:0px;
+									   bottom:0px;"></div>
+									   
+	<div id="pageIndicator" class="pageIndicator" style=
+	                                  "margin 4px 4px 4px 4px; 
+									   position:absolute;top:80&;left:40%;right:40%;bottom:0px;
+									   text-align:center;"></div>
+									   
+	<div id="promptContainer" class="promptContainer" style=
+	                                  "visibility:hidden;
+									   position:absolute;
+									   top:4px;
+									   left:4px;
+									   right:4px;
+									   bottom:4px;
+									   background-color:blue;"></div>
+									   
+	<div id="lessonContainer" class="lessonContainer" style=
+	                                  "visibility:visible;
+									   position:absolute;
+									   margin: 4px 5px 4px 5px;
+									   padding:14px 15px 14px 15px;
+									   top:4px;
+									   left:4px;
+									   right:4px;
+									   bottom:4px;
+									   background-color:green;"></div>
+
+</body>
+
+
+<footer id="controller">
+<form>
+	<input type="hidden" id="pageId" value="0">
+	<input type="hidden" id="styleId" value="0">
+	<input type="hidden" id="styleDirection" value="1">	
+</form>
+
+
+<script type="text/javascript" id="loadLesson">
+	var loadedLessons = [];
+	var loadedLessonsJS = [];
+	loadedLessons.push("This is a test of a few types of Qs"); 
+	loadedLessonsJS.push("testLesson"); 
+	loadedLessons.push("Test grammourmatics"); 
+	loadedLessonsJS.push("testLesson2"); 
+	loadedLessons.push("This is another test of a few types of Qs"); 
+	loadedLessonsJS.push("testLesson3"); 
+	loadedLessons.push("Test more grammourmatics"); 
+	loadedLessonsJS.push("testLesson4"); 
+
+	function listLessons(){
+	document.getElementById('lessonContainer').style.visibility = "visible"	
+	document.getElementById('lessonContainer').innerHTML = "<div style='text-decoration: underline;'>Here are your available loaded lessons:</div></br>";
+		for (var i =0; i < loadedLessons.length; i++) {
+			document.getElementById('lessonContainer').innerHTML += "</br><div onclick='loadLesson(\""+loadedLessonsJS[i]+"\")'>"+loadedLessons[i]+"</div>"
+		}
+	}
+
+
+	function loadLesson(lessonName){
+	document.getElementById('lessonContainer').style.visibility = "hidden"	
+	var lesson = document.createElement('script');
+	lesson.setAttribute('src',lessonName+'.js');
+	document.head.appendChild(lesson);
+	}
+
+	//loadLesson("testLesson");
+
+	listLessons();
+
+
+</script>
+
+
+
+</footer>
+
+
+
+
+</html>

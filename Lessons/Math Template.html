@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+  <html lang="en">
+    
+  <head>
+    <title>Math Lesson Template</title> 
+    <meta charset="utf-8"> 
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">  
+  
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sandbox/SATPrep.css">    
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  </head>
+    
+ <body>
+
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12">  
+				<p class="rdngHdng">Systems of Equations</p>
+				<p><strong>6x + 3y = 9</strong><br>
+				   <strong>2y - 2x = 12</strong></p>
+				<p>What is the solution to this system of equations?</p>
+				<p>To see what’s going on here a little bit better, it might help to rearrange the equations. </p> 
+				<p style="height:1rem"></p> 
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-sm-6">  
+				<p>Both equations involve x and y, so we can make them into linear equations. We just need	to get y alone on the left side.</p>
+			</div>
+			<div class="col-sm-6">  <!-- Line by Line collection of rows  -->
+				<p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line1.jpg'width="100px" height="35px"><br></p>  <!-- nominally sized single line equation -->		
+			</div>
+		</div>	
+		<div class="row">			
+			<div class="col-sm-6">  
+				<p>We subtract <strong>6x</strong> from both sides.</p>
+				<p><em>Click on the equation to see this in action</em></p>
+			</div>
+			<div class="col-sm-6">  
+				<p><img src="../Images/SoE_jpg/SoE_Line2.jpg" id="swap0" width="100px" height="71px" onclick="changeImage(id, '../Images/SoE_jpg/SoE_Line2.jpg', '../Images/SoE_jpg/SoE_Line2OL.jpg', 0);"><br></p>
+			</div>
+		</div>  	
+		<div class="row">	
+			<div class="col-sm-6">  
+				<p>Then we divide both sides by <strong>3</strong> to get y alone.</p>
+				<p><em>Click on the equation to see this in action</em></p>				
+			</div>
+			<div class="col-sm-6">  
+				<p><img src="../Images/SoE_jpg/SoE_Line4.jpg" id="swap1" width="100px" height="71px" onclick="changeImage(id, '../Images/SoE_jpg/SoE_Line4.jpg', '../Images/SoE_jpg/SoE_Line4OL.jpg', 1);"><br></p>		
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">  
+				<p>This gives us the line...</p>
+			</div>
+			<div class="col-sm-6">  
+				<p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line5.jpg'width="100px" height="35px"><br></p>		
+			</div>	
+		</div>		
+		<div class="row">
+			<div class="col-sm-6">  
+		
+				<p>We can do the same thing to the second equation.</p>
+				<p>We start by adding <strong>2x</strong> to both sides.</p>
+			</div>
+			<div class="col-sm-6">  
+				<p style="height:1rem"></p>   <!-- Vertical spacer to visually separate operations on each equation -->				
+				<p><img src="../Images/SoE_jpg/SoE_Line7.jpg" id="swap2" width="100px" height="71px" onclick="changeImage(id, '../Images/SoE_jpg/SoE_Line7.jpg', '../Images/SoE_jpg/SoE_Line7OL.jpg', 2);"><br></p>			
+			</div>		
+		</div>		
+		<div class="row">
+			<div class="col-sm-6">  
+				<p>Then we divide <strong>2</strong> from both sides to get y alone.</p>
+			</div>
+			<div class="col-sm-6">  
+				<p><img src="../Images/SoE_jpg/SoE_Line8.jpg" id="swap4" width="100px" height="71px" onclick="changeImage(id, '../Images/SoE_jpg/SoE_Line8.jpg', '../Images/SoE_jpg/SoE_Line8OL.jpg', 3);"><br></p>		
+			</div>				
+		</div>
+		<div class="row">
+			<div class="col-sm-6">  
+				<p>This gives us the line.</p>				
+				<p style="height:1rem"></p> 
+				<p><button  id=fp_page_0 value="1" onclick="showNextPage(event)">Now the Combined Solution</button></p>
+			</div>
+			<div class="col-sm-6">  
+				<p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line9.jpg'width="100px" height="35px"><br></p>
+				<p style="height:2rem"></p> 							
+			</div>
+		</div>	
+		<div id=page_1 style="display:none">
+			<div class="row">
+				<div class="col-sm-4">  
+					<p>We can graph these two lines.</p>
+					<p>The point where the two lines intersect is the solution to the system. Both equations are in the exact same place at (-1, 5), meaning that they are both momentarily equal.</p> 
+					<p id=fp_page_1>When we’re calculating the solution to a system of equations, we’re looking for the point (or, sometimes, the points) where the two equations intersect, the places where the two equations are exactly equal. What is the solution to this system of equations?</p>
+					<p><button id=TryAProblem value="2" onclick="showNextPage(event)">Let's Try a Problem</button></p>
+				</div>			
+				<div class="col-sm-8">  
+					<p><img class='img-modal' src='../Images/SoE_jpg/Plotting.jpg'width="300px" height="350x"><br></p>  <!-- sized for the plot -->
+					<p id="fp_page_1" style="height:1rem"></p> 	
+				</div>	
+			</div>	
+		</div>	
+		<div id=page_2 style="display:none">
+			<div class="row">
+				<div class="col-sm-12"> 
+					<p class="rdngHdng">Multiple Choice 1</p>	
+					<p><strong>2a + b = 4</strong><br>
+					   <strong>a - b = 11</strong></p>
+						
+					<p style="height:1rem"></p> 			
+					<p id="Q1">What is the solution to this system of equations?</p>		
+					<ol id="exampleFormControlSelect1" type="A">
+							<li><a href="#Q1" id="Q1A" value="Q1A" onclick="showResp(event)">(2, 0)</a></li>
+							<li><a href="#Q1" id="Q1B" value="Q1B" onclick="showResp(event)">(13, 2)</a></li>
+							<li><a href="#Q1" id="Q1C" value="Q1C" onclick="showResp(event)">(3, -2)</a></li>
+							<li><a href="#Q1" id="Q1D" value="Q1D" onclick="showResp(event)">(5, -6)</a></li>
+					</ol>		
+			
+					<p id=fp_page_2 style="height:1rem"></p> 
+					<p><button id="why" value="3" onclick="showNextPage(event)"><span class="bAqua">Tell Me Why</span></p>
+					<a href="#!" id="Q1DIV"></a>
+					<p style="height:1rem"></p>				
+					<p><button  value="4" onclick="showNextPage(event)">Next Question >></button></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- The tell me why write up as a dual column structure -->
+		<div id=page_3 style="display:none">
+			<div class="row" >
+				<div class="col-sm-6">  
+					<p>We can’t solve for both variables at once, but we can focus on one variable at a time using elimination. </p>
+				</div>
+				<div class="col-sm-6">  <!-- Line by Line collection of rows  -->
+					<p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line18.jpg' width="110px" height="71px"><br></p>  <!-- nominally sized two line equation -->		
+				</div>
+			</div>	
+			<div class="row">			
+				<div class="col-sm-6">  
+					<p>Adding the entire second equation to the first equation cancels out the b values. </p>
+					<p><em>Click on the equation to see this in action</em></p>
+					<p style="height:1rem"></p>    <!-- Spaced down to match sample --> 
+					<p>Now, our task is just to get <strong>a</strong> alone on the left.</p>
+				</div>
+				<div class="col-sm-6">  
+					<p style="height:1rem"></p>    <!-- Spaced down to match sample --> 
+					<p><img src="../Images/SoE_jpg/SoE_Line20.jpg" id="swap5" width="110px" height="71px" onclick="changeImage(id, '../Images/SoE_jpg/SoE_Line20.jpg', '../Images/SoE_jpg/SoE_Line20OL.jpg', 4);"><br></p>  
+					<p style="height:1rem"></p>    <!-- Spaced down to match sample --> 
+				</div>
+			</div>	
+			<div class="row">	
+				<div class="col-sm-6">  
+					<p>To get rid of a coefficient, we divide both sides by that number</p>
+					<p><em>Click on the equation to see this in action</em></p>		
+					<p style="height:1rem"></p>    <!-- Spaced down to match sample --> 
+				</div>
+				<div class="col-sm-6">  
+				    <!-- Setup to switch  SoE_Line21 and SoE_Line21OL  -->
+					<p><img src="../Images/SoE_jpg/SoE_Line21.jpg" id="swap6" width="100px" height="71px" onclick="changeImage(id, '../Images/SoE_jpg/SoE_Line21.jpg', '../Images/SoE_jpg/SoE_Line21OL.jpg', 5);"><br></p>  	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">  
+					<p>Now that we have a, we can plug that back in to one of the original equations to find b. </p>
+				</div>
+				<div class="col-sm-6">  
+					<!--  Set this up to display 22OL BELOW 22 -->	
+					<p><img src="../Images/SoE_jpg/SoE_Line22.jpg" id="swap7" width="100px" height="71px" onclick="changeImage(id, '../Images/SoE_jpg/SoE_Line22.jpg', '../Images/SoE_jpg/SoE_Line22OL.jpg', 6);"></p
+				</div>	
+			</div>		
+			<div class="row">
+				<div class="col-sm-6">  
+					<p id=fp_page_3>Putting these results back together into <strong>(a, b)</strong> form, we end up with <span class="bAqua"(5, -6)</span>.</p>
+				</div>
+				<div class="col-sm-6">  
+					<p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line6.jpg'width="100px" height="35px"><br></p>  <!-- nominally sized single line equation -->				
+				</div>	
+			</div>	
+			<div class="row">
+				<div class="col-sm-12">  
+					<p>With questions like this, students sometimes try to shortcut the question by avoiding the algebra and just plugging the answer choices into the original equation and seeing if they satisfy the equations. This is fine— although it might be just as time-consuming for this particular question— but it’s essential to check each answer in both equations. Each of the wrong answers would satisfy one equation or the other, but they don’t work for both.</p>
+				</div>
+			</div>		
+			<div class="row">
+				<div class="col-sm-6">  
+					<p>If we just plug-and-chug with answer A...</p>
+					<p style="height:1rem"></p>    <!-- Spaced down to match sample --> 
+					<p>(2, 0)  works for the first equation:</p>					
+				</div>
+				<div class="col-sm-6">  
+					<p style="height:1rem"></p>    <!-- Spaced down to match sample --> 				
+					<p> <img class='img-modal' src='../Images/SoE_jpg/SoE_Line23.jpg'width="110px" height="105px"><br></p>  		
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-sm-6">  
+					<p>However, it doesn’t work for the second one. </p>				
+					<p style="height:2rem"></p> 
+					<p><button  value="4" onclick="showNextPage(event)">Next Question >></button></p>
+				</div>
+				<div class="col-sm-6">  
+					<p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line24.jpg'width="100px" height="105px"><br></p>				
+				</div>			
+			</div>
+			<div class="row">
+				<div class="col-sm-12">  
+					<p style="height:1rem"></p> 
+
+				</div>
+			</div>					
+		</div>	
+		<!-- End of the Tell Me Why segment -->
+			
+		<!-- Second Multiple Choice Question -->			
+		<div id=page_4 style="display:none">		
+			<div class="row">
+				<div class="col-sm-12"> 
+					<p class="rdngHdng">Multiple Choice 2</p>	
+					<p><strong>3y - 3x = 6</strong><br>
+					<strong>2y - 4x = -2</strong></p>
+					<p style="height:1rem"></p> 
+					<p id="Q2">If (x, y) is the solution to the system of equations, what is x + y?</p>		
+					<ol id="exampleFormControlSelect1" type="A" 
+							<li><a href="#Q2" id="Q2A" value="Q2A" onclick="showResp(event)">3</a></li>
+							<li><a href="#Q2" id="Q2B" value="Q2B" onclick="showResp(event)">4</a></li>
+							<li><a href="#Q2" id="Q2C" value="Q2C" onclick="showResp(event)">5</a></li>
+							<li><a href="#Q2" id="Q2D" value="Q2D" onclick="showResp(event)">8</a></li>
+					</ol>	
+						<p><button id=fp_page_4 value="5" style="color:#00ffff" onclick="showNextPage(event)">Tell Me Why</p>
+						<p id="Q2DIV" style="height:1rem"></p> 
+						<p><button  value="6" onclick="showNextPage(event)">Last Page >></button></p>
+				</div>
+			</div>
+			<!-- The tell me why write up as a dual column structure -->
+			<div id=page_5>
+				<div class="row" style="display:none">
+					<div class="col-sm-6">  
+						<p>In order to use elimination, we need the coefficients for one of the variables to line up. Here, both 3 and 2 (the numbers attached to y) go into 6.</p>
+					</div>
+					<div class="col-sm-6">  <!-- Line by Line collection of rows  -->
+						<p>This equation needs to be completed and saved as a jpg.  The name in te src directive will need to be changed to match.  I suggest SoE_Line 30 or something similar</p>
+						<!-- <p><img class='img-modal' src='../Images/SoE_Line30.jpg' width="110px" height="71px"><br>  -->
+						</p>  fill in the src once the graphic is generated as a jpg </p> 		
+					</div>
+				</div>	
+				<div class="row">			
+					<div class="col-sm-6">  
+						<p>That means that we can get a pair of aligned coefficients by multiplying the first equation by 2 and multiplying the second one by 3.</p>
+					</div>
+					<div class="col-sm-6">  
+						<p>This equation needs to be completed and saved as a jpg.  The name in te src directive will need to be changed to match.  I suggest SoE_Line 31 or something similar</p>
+						<!-- <p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line31.jpg' width="110px" height="71px"><br>  -->
+						<p style="height:1rem"></p>    <!-- Spaced down to match sample --> 
+					</div>
+				</div>	
+				<div class="row">	
+					<div class="col-sm-6">  
+						<p id=fp_page_5>We can use the elimination method on our	new equations because we have 6y in both.	</p>
+					</div>
+					<div class="col-sm-6">  
+						<p>This equation needs to be completed and saved as a jpg.  The name in te src directive will need to be changed to match.  I suggest SoE_Line 32 or something similar</p>
+						<!-- <p><img class='img-modal' src='../Images/SoE_jpgs/SoE_Line32.jpg' width="110px" height="71px"><br>  -->	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">  
+						<p>Remember that when we subtract by a negative, it’s like we’re adding the positive version of that term</p>
+					</div>
+					<div class="col-sm-6">  
+						<p>This equation needs to be completed and saved as a jpg.  The name in te src directive will need to be changed to match.  I suggest SoE_Line 33 or something similar</p>
+						<!-- <p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line33.jpg' width="110px" height="71px"><br>  -->				
+					</div>	
+				</div>		
+				<div class="row">
+					<div class="col-sm-6">  
+						<p>We get x alone by dividing both sides by 6.</p>
+					</div>
+					<div class="col-sm-6">  
+						<p>This equation needs to be completed and saved as a jpg.  The name in te src directive will need to be changed to match.  I suggest SoE_Line 34 or something similar</p>
+						<!-- <p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line34.jpg' width="110px" height="71px"><br>  -->				
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-sm-6">  
+						<p>Now that we have x, we can plug that back into one of the original equations to find y.</p>
+					</div>
+					<div class="col-sm-6">  
+						<p style="height:1rem"></p> 				
+						<p>This equation needs to be completed and saved as a jpg.  The name in te src directive will need to be changed to match.  I suggest SoE_Line 35 or something similar</p>
+						<!-- <p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line35.jpg' width="110px" height="71px"><br>  -->				
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-sm-6">  
+						<p>We add 18 to both sides.</p>
+						<p style="height:1rem"></p>					
+						<p>We divide both sides by 6 to get y alone.</p>
+					</div>
+					<div class="col-sm-6">  
+						<p style="height:1rem"></p> 				
+						<p>These equations needs to be completed and saved as jpg files.  The names in the src directive will need to be changed to match.  I suggest SoE_Line 36 & 37</p>
+						<!-- <p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line36.jpg' width="110px" height="71px"><br>  -->				
+						<!-- <p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line37.jpg' width="110px" height="71px"><br>  -->	
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-sm-6">  
+						<p>Remember that the actual final task was to find x + y. </p>
+					</div>
+					<div class="col-sm-6">  
+						<p style="height:1rem"></p> 				
+						<p>These equations needs to be completed and saved a jpg file.  The names in the src directive will need to be changed to match.  I suggest SoE_Line 38</p>
+						<!-- <p><img class='img-modal' src='../Images/SoE_jpg/SoE_Line38.jpg' width="110px" height="71px"><br>  -->				
+
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-sm-12">  
+						<p>The test writers love to throw in these little side tasks at the end of questions. Be very mindful about what the question is actually asking us for.</p>
+					</div>
+				</div>		
+			</div>  <!-- end page 5 -->				
+		</div>		<!-- end page 4  -->	
+		<!-- End of second multiple choice question minus Tell Me More 2 -->
+		<div id=page_6 style="display:none">
+			<div class="row">
+				<div class="col-sm-6">  
+					<p>LAST PAGE</p>
+					<p>Put the explanation text in this list of paragraphs</p>
+					<p>These paragraphs can contain any text or HTML that is needed.</p>
+					<p>The number of paragraphs or lines of text provided in the longer of the two paragraphs on this row needs to fit with the paired Math operations within the size of the smallest window</p>
+					<p id=fp_page_6>When certain that the display will fit in any display you can use the HTML table construct like was used for the reading but when shrunk it does not stack like the rows will</p>
+					<p style="height:1rem"></p> 
+					<p><button  value="7" onclick="showNextPage(event)">Done - Doesn't work</button></p>					
+				</div>
+				<div class="col-sm-6">  
+					<p>Will be setting up the HTML/Javascript to support switching which jpg graphic is displayed or overlays changes.  This switching should not be difficult</p>
+					<p>This scheme requires intertwining element names which I will need to consider wen I am really awake.</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>		
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	   
+
+
+ 	<script type="text/javascript">
+		<!-- Basic Script Variable --> 
+		// define variables to deal with linked questions
+		//var firstAnswer=null;
+		//var secondAnswer=null;
+		
+		var background = "#ffffff";  // Sets the background to white
+		var textColor = "#000000";     // Sets the basic text color to Black
+		var oldText = [];
+		// define variables to control the display of explanations
+		//                0  1   2   3   4   5   6   7   8   9  10  11
+		var startPara = [ 0, 0];
+		var lastPara =  [ 0, 18];
+		
+		// Before attributes values for resetting the display
+		var oldBorder;
+		var oldBackground;
+		var oldTextColor;
+		var oldInnerHTML;
+		
+		// Used to wrap an explanation in HTML elements to make the result clickable
+		var newInnerHTML;
+		
+		// List of correct responses for reading quotes
+		var rightResponses = ["Q1D", "Q2D", "Q3C", "Q4C"]; 		
+
+		// variable to control display of explanations in English element placement explanations
+        var correctIndices = ["6", "9", "12", "14", "17", "19", "21"];
+		var correctText =", "+"&nbsp"+"&nbsp"+"&nbsp"+"&nbsp";
+		
+		//                   0  1  2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22   
+		var startEngPara = [ 0, 0, 3, 10, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36];
+		var lastEngPara =  [ 0, 2, 9, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36];
+			
+		 var image_tracker = ['orange', 'orange', 'orange', 'orange', 'orange', 'orange', 'orange'];
+		
+		
+		//                        0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15     16     17      18    19     20     21     22
+		var englishWritten = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+        // Display attributes for English lessons 
+		var englishMsgBg = "#9933ff";
+		var englishMsgTextColor="#ffffff";
+		
+		// Remember these indices are Zero based so to have written[11] need 12 entries
+        //                  0      1      2      3      4      5      6      7      8      9     10     11 
+		var written = [ false, false, false, false, false, false, false, false, false, false, false, false];
+		//                0      1     2      3      4      5      6      7      8      9      10     11     12     13      14     15    16      17     18    19     20 
+		var displayed = [ false, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+		//var mixed = ["Q23", "Q78"];	
+		
+		// Index for removing the unselected wrong answers
+		var questionOptions = ["A", "B", "C", "D"];	
+		
+		// Explanation Text elements to display
+		var paragraphs = new Array(	  
+			/* 0 */  "Do we have a list of chores here?",   
+			/* 1 */	 "How do we separate items in a list from each other?",  
+			/* 2 */	 "",  
+  			/* Question 1 - Option 2 */			
+			/* 3 */	 "We put commas between items in a list.",           
+			/* 4 */	 "What are the items in our list?" ,  
+			/* 5 */	 "That's right the list contains: We put commas between items in a list. What are the items in our list? We only need to put commas between those items.",  
+			/* 6 */	 "my laundry",
+			/* 7 */	 "made my bed",
+			/* 8 */	 "and performed ...",	
+			/* 9 */  "We only need to put commas between those items.",
+			/* Question 1 - Option 3 */			
+			/* 10 */ "<b>Right</b>",
+			/* 11 */ "We have three items-- ",				
+			/* 12 */ "did my laundry,",
+			/* 13 */ " made my bed,",
+			/* 14 */ "and performed my nightly breathing exercises--",
+			/* 15 */ "in this list. We separate them from each other with commas. ", 
+			/* 16 */ "We don't need commas inside of those items themselves.",				
+			/* Question 1 - Option 4 */
+			/* 17 */ "Are all of these commas necessary? Do we need the first comma, the one after 'did?'",  
+			/* 18 */ "The test writers love to throw in these answer choices that are mostly right but have one sly mistake thrown in somewhere. This is especially the case with comma questions. Be very care to make sure that an answer choice doesn't have some pesky, unnecessary comma thrown in somewhere.",
+			/* Where do the commas go - trial 1  */	 			
+			/* 19 */ "What's our dependent clause here? What's our independent clause? Where do we transition from one to the other?", 	
+			/* 20 */ "<b>Exactly,</b><br><i>Although I didn't know how to get there</i>is our dependent clause, which we separate from our independent clause (<i>I was too proud to ask for directions</i>).<br> with a comma",
+			/* 21 */ "What's our dependent clause here? What's our independent clause? Where do we transition from one to the other?",
+			/* Where do the commas go - trial 2  */				
+			/* 22 */	"Where does one idea seem to end and another one begin?<br>Where does the sentence change directions?",
+			/* 23 */	"<b>Exactly</b><br><i>Although I didn't know how to get there</i> is our dependent clause, which we separate from our independent clause<br><i>I was too proud to ask for directions</i>).",
+			/* 24 */	"Where does one idea seem to end and another one begin?<br>Where does the sentence change directions?",
+            /* Does this work - response 3  */  			
+			/* 25 */	"My car is a singular noun, no commas needed here",
+			/* 26 */	"Good placement for the first comma you have isolated the subject noun.<br><b>Now where does the second one go?</b>",
+			/* 27 */	"Hmm... If we take the material in between the commas out, are we left with one, complete sentence?",
+			/* 28 */	"<b>Perfect</b><br>We can test our comma placement by taking the string of words between the commas out.<br>Then, we're left with <i>My car ran out of fuel.</i>. That's a perfectly fine, if somewhat less detailed, sentence on its own.",
+			/* 29 */	"Response for wrong guesses after second comma location",	
+			/* Does this work - response set 4 */  
+			/* 30 */	"Incorect response at start of sentence",
+			/* 31 */	"First correct placement", 
+			/* 32 */	"Incorrect response between first and second commas",
+			/* 33 */	"Second correct placement",
+            /* 34 */	"Incorect response between second and third comma or after second one - your choice",
+			/* 35 */	"Third correct placement",
+			/* 36 */	"Incorrect guesses at the end of the sentence"
+			);
+			
+		function showNextPage(e) {
+		
+			// alert("In showNextPage");
+			// Address this command to the value set in the call
+			var targetPage = "page_"+e.target.value;
+			var focalTarget = "fp_page_"+e.target.value;
+			//alert("Next Page "+targetPage);
+			//alert("Focal Point "+focalTarget);
+			var x = document.getElementById(targetPage);
+			//alert("Event called with"+x);
+
+			if (displayed[e.target.value] == false) {
+					document.getElementById(targetPage).style.display = "block";
+					document.getElementById(focalTarget).focus({preventScroll:false});
+					displayed[e.target.value] = true;
+			} else {
+					document.getElementById(targetPage).style.display = "none";
+					displayed[e.target.value] = false;
+			}
+		}
+		
+		function changeImage(place, address1, address2, index) {
+		var image = document.getElementById(place);
+		if(image_tracker[index]=='orange')  {
+				image.src=address1;
+				image_tracker[index]='blue';
+			}
+			else  {
+				image.src=address2;
+				image_tracker[index]='orange';
+			}
+		}
+		
+		function answerCheck(qid, response) {
+			var el = document.getElementById(response);
+
+			// alert("Right Responses = "+rightResponses.indexOf(response));         // Debug assist
+			// alert(rightResponses[0]);                        // More debug assist  
+			// alert(rightResponses.indexOf(response) != -1);   // Third debug line
+			
+			if (rightResponses.indexOf(response) != -1 ) {    // Returns negative one if response not found in rightResponses otherwise it is
+				el.style.color = "#66ff33";                   // set to specific shade using color picker
+				el.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+				// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+				this.focus();
+
+                // Having set the Right Answer to bold Bright Green in the above 2 lines clear the remaining options.
+				// Remove third letter of response from set of questions
+				// debugging lines
+				// alert(questionOptions);
+				// alert(response.slice(2));
+
+				// remove the selected answer
+				removeOption(response);
+				// alert("After cleaning "+questionOptions);	
+
+				// Clear rest of answers
+				clearOptions(qid, response);	
+
+				// Reset the array of options
+                questionOptions = ["A", "B", "C", "D"];  
+				
+				// TODO: Do we need to keep a list of questions that can still be answered
+			}
+			else 
+			{
+				el.style.color = "#ffffff"; // where background would be is a var set in the right scope
+				removeOption(response);	    // remove the selected answer
+				document.getElementById(qid).focus({preventScroll:true});				
+			}
+			el.style.backgroundColor = background;  // set where it covers the reading 
+			//alert(e.target.value);
+			// If error count == 0
+			// First Time Right++ 
+			// else Right++
+		}
+
+		// Helper function to clear used answer options
+		function removeOption(response) {
+			// Remove third letter of the user response from set of questions
+			//alert(questionOptions);
+			// alert(response.slice(response.length-1));
+			switch (response.slice(response.length-1)) {
+				case 'A':
+				  questionOptions[0]="";   
+				  break
+				case 'B':
+				  questionOptions[1]="";   
+				  break;
+				case 'C':
+				  questionOptions[2]="";   
+				  break;
+				case 'D':
+				  questionOptions[3]="";   
+				  break;
+				}
+			}	
+		
+		// Helper function to clear other Answer Options  
+		function clearOptions(qid, response) {
+			// alert("Item: "+item);
+			// alert("Index: "+index);
+			// alert("In clearing options "+questionOptions);
+			var m;
+			for (m = 0; m <= 3; m++) {
+				var toClear = questionOptions[m];
+				//alert("to Clearing "+toClear);
+				// Do not clear the empty indices
+				if (toClear != "") {
+					// Construct the ID of the answer option to remove
+					tempResponse = response.slice(0,response.length-1)+toClear;
+			
+					//alert(tempResponse);
+					// remove this answer option
+					var tel = document.getElementById(tempResponse);
+					tel.style.color = "#ffffff"; 
+					this.focus({preventScroll:true});
+
+				}
+				this.focus({preventScroll:true});
+			}
+		}
+		
+		// Restores the questions when called when the explanation is shown
+		function resetAnswers(targeted) {
+
+			// alert("Right Responses = "+rightResponses.indexOf(response));         // Debug assist
+			// alert(rightResponses[0]);                        // More debug assist  
+			// alert(rightResponses.indexOf(response) != -1);   // Third debug line
+			
+			var m;
+			for (m = 0; m <= 3; m++) {
+				toReset = "Q"+targeted+restoreOptions[m].toString();
+				// alert(toReset);
+				var rel = document.getElementById(toReset);				
+				if (rightResponses.indexOf(toReset) != -1 ) {    // Returns negative one if response not found in rightResponses otherwise it is
+					rel.style.color = "#66ff33";                   // set to specific shade using color picker
+					rel.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+					// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+					this.focus();
+				}
+				else {
+					rel.style.color = "#000000";                   // otherwise set to black
+					// rel.style.fontWeight = "bold";                 // also set to bold for a positive contrast 
+				
+					// document.getElementById(qid).focus({preventScroll:true});  // attempting to keep focus on this question
+					this.focus();
+				}
+			}	
+		}
+
+	
+		function placeChk(place, index, showAt) {
+			// place is the id of the space where the user has selected locates both where to place the correct text and whether response is correct
+			//       should be the complete id defined in the corresponding HTML
+			// index links to the explanation text
+			// showAt directs where to write the correc response. 
+			
+			// alert("Selected place ="+place);
+			// alert("Explanation Index ="+index);
+			// alert("Where to show result ="+showAt);
+		
+			if (englishWritten[index]==false) {
+
+					// Check to see if you need to write the correct answet
+					if (correctIndices.indexOf(index) != -1 ) {    // This checks whether selected spot is correct by checking its location in the list	
+																   // of correct answers.  If it is not in the list it indexOf returns -1 so the answer is incorrect
+						document.getElementById(place).innerHTML = correctText; 							
+						document.getElementById(place).style.backgroundColor=englishMsgBg;
+						document.getElementById(place).style.color=textColor=englishMsgTextColor;														   
+					}
+
+					// Call engExpo to display the explanation
+					engExpo(index, showAt, place);					
+					// Set this array element to true to indicate that this place has been selected as a possible answer
+				}
+			else if (englishWritten[index]==true) {
+				// Blank out the explanation
+					//alert("clearing explanation");
+					// Call engExpo to display the explanation
+					engExpo(index, showAt, place);	
+			}		
+		}  // End of function
+		
+			
+		//  The code for handling the math is sketched out below.
+		function showMath(id, nextStep, Steps) {
+			// Set up a list of steps (may come from outside)
+			// Set up the root name
+			var nel = document.getElementById(id);
+			var nextLefttRoot = "Left_lsn_idx_"
+			var nextRightRoot = "Right_lsn_idx_"
+
+			for (x in nextStep, nextStep + Steps) 
+			{
+				nextLeft = nextLefttRoot + x.toString();
+				nextRight = nextRightRoot + x.toString();
+				// Set explanation text to corresponding text variable set in secondary JavaScript file.  Example shown
+				// var nextLeftText = "Some specified text";
+				//  Set the left HTML 
+				document.getElementById(nextLeft).innerText = nextLeftText;
+
+				// Set the math image source 
+				document.getElementById(nextRight). innerHTML = "document.image.src = 'toString(nextRight)'";
+			}
+		}	
+		
+		function sLE(para2Display, displayAt, sleIndex){
+			// This functions full name is singleLineExplanation it is intended to be used to display a single paragraph 
+			// explanation at a selected location with a standardized name. 
+			// para2Display is the index in the arrayof response paragraphs where the single line is. 
+			// displayAt is the index to which standardized location to write this paragraph
+			// sleIndex is the index or count into an array of booleans set up to control the display of single line responess. 
+			
+			// Build the standardized location
+			var targetResult = "SLE_" + displayAt.toString();	
+			//alert("TargetResult "+targetResult);
+			// var i = startPara[targeted];
+			//alert("Initial i="+i);
+			//alert(written[targeted]);
+			
+			if (SLEwritten[sleIndex]==false) {
+				//alert("building expanation");		
+				alert (paragraphs[para2Display]);
+				document.getElementById(targetResult).style.position="relative";  // set to a relative positin
+       				
+				document.getElementById(targetResult).innerHTML = paragraphs[para2Display] + "<br>";
+				
+				//alert("Output = "+explained);
+				SLEwritten[sleIndex]=true;
+				// restore the Answers
+				alert (targeted);  
+			}	
+			else if (written[targeted]==true) {
+				// Blank out the explanation
+				//alert("clearing explanation");
+				document.getElementById(targetResult).innerHTML = [];
+				SLEwritten[sleIndex]=false;
+			}
+			else  {
+				alert("Impossible Logic");
+			}
+		}
+  
+		
+		function engExpo(index, showAt, place){
+			// In the cases below we can put most HTML tags so we could probably popup an image to explain a question
+			// Use an accordion, modal box or toggling class to display/diaappear this content. 
+			
+			// Using an array of paragraphs (with the ly set up an array of indexs and use them
+			//alert("In engExpo");
+			// var firstOptionValue = 65;
+			var explained = [];
+			//alert("Set Value "+q.currentTarget.attributes.value);
+			//alert ("Text Color "+englishMsgTextColor);
+			
+			// Pseudo polymorph on the patterns of possible answers
+			// alert("Index ="+index);
+			// alert("Show At = "+showAt);
+			
+			
+			// The start of questionExtract
+			// var selected = q.target.className.slice(2,3);
+			// alert(selected); 
+			// convert Selection letter to 
+			// var targeted = index;  
+			// alert(targeted);			
+		    // The end of questionExtract
+			
+			var targetResult = showAt;  // q.target.className; // "Q" + targeted.toString() + "DIV";	
+			//alert("TargetResult "+targetResult);
+			var i = startEngPara[index];
+			//alert("Initial i="+i);
+			//alert(written[targeted]);
+						
+			if (englishWritten[index]==false) {
+				// Run through the for loop to set up explanation
+				//alert("building expanation");		
+				for (i = startEngPara[index]; i <= lastEngPara[index]; i++) {
+					//alert("Index= "+i);
+					explained += paragraphs[i] + "<br>";
+					//alert("Output = "+explained);
+				}
+				//  Add message alerting user to reclick to clear
+				explained = explained + "<em>Click on original selection to clear</em>";
+				// Wrap the explanation in HTML so it can be toggle off when clicked
+				newInnerHTML = "<span id="+showAt+" onclick=&quot placeChk('"+place+"', '"+index+"', '"+showAt+"')"+explained+"</span>";
+				// alert(newInnerHTML);
+				
+				// Read the before attributes for resetting the display
+				oldBorder = document.getElementById(targetResult).style.border;
+				oldBackground = document.getElementById(targetResult).style.backgroundColor;
+				oldTextColor = document.getElementById(targetResult).style.color;
+				oldInnerHTML = document.getElementById(targetResult).innerHTML;
+				
+				englishWritten[index]=true;
+				//alert("Number of elements in class "+document.getElementsByClassName(targetResult).length);
+				// Write the built explanation to the right HTML element 
+				oldText = document.getElementById(targetResult).innerText;
+				// alert(oldText);
+				document.getElementById(targetResult).innerHTML = explained; 
+				// Complete the pseudo-modal definition
+				document.getElementById(targetResult).style.position="relative";
+				document.getElementById(targetResult).style.border="0px solid #9933ff";
+				document.getElementById(targetResult).style.position="relative";
+				document.getElementById(targetResult).style.bottom="0px";
+				document.getElementById(targetResult).style.left="0px";
+				document.getElementById(targetResult).style.backgroundColor=englishMsgBg;
+				document.getElementById(targetResult).style.color=englishMsgTextColor;				
+				
+				// set the written flag to ensure we can sure reset the message 
+				englishWritten[index]=true;
+			}	
+			else if (englishWritten[index]==true) {
+				// Blank out the explanation
+				//alert("clearing explanation");
+				explained = [];
+				englishWritten[index]=false;
+				// Write the built explanation to the right HTML element 
+				document.getElementById(targetResult).innerText = oldText;
+				document.getElementById(targetResult).style.backgroundColor=oldBackground;
+				document.getElementById(targetResult).style.color=oldTextColor;			
+				document.getElementById(targetResult).style.border=oldBorder;
+				document.getElementById(targetResult).innerHTML = oldInnerHTML;				
+			}
+			else  {
+				alert("Impossible Logic");
+			}
+			
+   
+		}
+		  
+		function textExpo(e) {
+			// alert("In textExpo");
+			var expo = e.target.value;
+			// alert(expo);
+			var x = document.getElementById(e.target.value);
+			// alert(x);
+			switch (expo) {		
+			case 'T1Expo':
+				x.innerHTML = "Dubitable means uncertain, yielding to doubt.";	
+				break;
+				
+			case 'T2Expo':
+				x.innerHTML = "<b>Text 2 Popup</b>";	
+				break;
+				
+			case 'T3Expo':
+				x.innerHTML = "<b>Text 3 Pop-up</b>";	
+				break;
+
+			}	
+		}
+		
+				
+		function combined(e, firstQ, secondQ) {
+			// This function handles situations where two questions have to be answered together. 
+			// It is set up to accept two values then process the combined result of both.
+			// In this use of this function the questions are #2 and #3
+				
+			// alert("In Combined");
+			// alert(e.target.value);
+			// Process each of the inputs
+			
+			// Copy the event text to a string
+			var eventText = e.target.value;
+			var outTarget = "C"+firstQ.toString()+secondQ.toString()+"Explained";	
+			
+			if ( eventText.slice(1,2) = firstQ ) 
+			{
+				firstAnswer= eventText.slice(eventText.length-1).toUpperCase();
+			}
+			else if ( eventText.slice(1,eventText.length-1) = secondQ ) 
+			{
+				secondAnswer= eventText.slice(eventText.length-1);
+			}
+			else
+			{
+			// Raise Error
+			}
+				
+			// Now with both answers generate the response
+			if (firstAnswer != null && secondAnswer != null)
+			{
+				// Set up the new combined response token
+				combo = firstAnswer + secondAnswer;
+				
+				// alert (combo);
+				answerCheck("Q"+firstQ+secondQ, "Q"+firstQ+secondQ+combo);
+				
+			}
+			
+			if (firstAnswer == null && secondAnswer != null)
+			{
+				document.getElementById(outTarget).value = "Please select an answer to question "+firstQ.toString();
+				// error counter-increment
+			}	
+			
+			if (firstAnswer != null && secondAnswer == null)
+			{
+				document.getElementById(outTarget).value = "Please select an answer to question "+secondQ.toString();
+				// error counter-increment
+			}
+		}
+			
+			
+		// This wraps Answer Check and can then 
+		function showResp(e) {
+			//alert("Getting There");
+            //alert(e.target.id);
+			// alert(e.target);
+			// alert(value);
+			// Convert e to qid and response
+			eventText = e.target.id;
+			// alert(eventText);
+			var eventTarget = eventText.slice(0,2)+"DIV"
+			answerCheck(eventText.slice(0,2)+"DIV", eventText);	
+			document.getElementById(eventText).focus({preventScroll:true});
+			
+			return false;
+		}
+
+		
+		
+    </script>
+		
+</body>
+    
+</html>
